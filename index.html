@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ruïnekerk app – proef v1.5</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<style>
+body{margin:0;font-family:system-ui,sans-serif;background:#f4f1ea;color:#26353a}
+header{background:#fff;padding:15px;border-bottom:1px solid #ddd;position:sticky;top:0;z-index:1000;position:relative}
+h1{margin:0;font-size:20px}.sub{font-size:12px;color:#6c777b}
+.version{position:absolute;right:14px;top:14px;font-size:11px;color:#6c777b;background:#eee;padding:5px 8px;border-radius:12px}
+#map{height:52vh;min-height:350px}.panel{padding:14px}
+button{padding:10px 13px;border:0;border-radius:10px;background:#26353a;color:#fff;margin:3px}
+.status{font-size:13px;margin:8px 3px}.card{background:#fff;border-radius:14px;padding:14px;margin:10px 0;border:1px solid #ddd}
+.card h2{margin:0 0 4px}.meta{font-size:12px;color:#6c777b}.story{font-size:14px;line-height:1.55;margin-top:8px}
+.error{background:#ffe2e2;padding:12px;border-radius:10px;margin:10px 0;font-size:13px}
+.content-meta{font-size:11px;color:#6c777b;background:#f0eee9;padding:8px;border-radius:9px;margin-top:8px}.notes{margin-top:12px;padding-top:10px;border-top:1px solid #eee}.note{background:#f7f6f2;border-radius:9px;padding:8px;margin:7px 0;font-size:13px}.notehead{font-size:11px;color:#6c777b;font-weight:600}
+</style>
+</head>
+<body>
+<header><h1>Ruïnekerk app</h1><div class="sub">Schone eerste proef</div><div class="version">app v1.5</div></header>
+<div id="map"></div>
+<div class="panel">
+<button onclick="testPosition()">🧪 Testpositie</button>
+<button onclick="myPosition()">📍 Mijn locatie</button>
+<button onclick="showAll()">🗺️ Alle locaties</button>
+<div id="status" class="status">Locaties worden geladen…</div>
+<div id="message"></div>
+<div id="locations"></div>
+</div>
+
+<div id="noteModal" style="display:none;position:fixed;inset:0;background:#0008;z-index:3000;padding:14px;overflow:auto">
+<div style="background:#fff;border-radius:16px;padding:16px;max-width:650px;margin:20px auto">
+<h2 id="noteTitle">Notitie</h2>
+<label>Type</label><select id="noteType"><option value="opmerking">Opmerking</option><option value="idee">Idee voor tekst</option><option value="beoordeling">Beoordeling</option></select>
+<label>Datum</label><input id="noteDate" type="date">
+<label>Tekst</label><textarea id="noteText" placeholder="Schrijf je opmerking, idee of beoordeling…"></textarea>
+<button type="button" onclick="saveNote()">Opslaan</button>
+<button type="button" onclick="closeNote()" style="background:#e8e5df;color:#26353a">Annuleren</button>
+<div id="noteExisting"></div></div></div><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+let locations=[];
+let userLat=null,userLon=null;
+let map=L.map('map').setView([52.72,4.88],13);
+let markers=[];
+let userMarker=null,userCircle=null;
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+ maxZoom:19,attribution:'© OpenStreetMap contributors'
+}).addTo(map);
+
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));}
+function distance(a,b,c,d){
+ const R=6371000,p=Math.PI/180,A=(c-a)*p,B=(d-b)*p;
+ const q=Math.sin(A/2)**2+Math.cos(a*p)*Math.cos(c*p)*Math.sin(B/2)**2;
+ return 2*R*Math.atan2(Math.sqrt(q),Math.sqrt(1-q));
+}
+function formatDistance(n){return n<1000?Math.round(n)+' m':(n/1000).toFixed(1)+' km';}
+
+async function loadLocations(){
+ try{
+  const response=await fetch('locaties.json?v='+Date.now(),{cache:'no-store'});
+  if(!response.ok)throw new Error('HTTP '+response.status);
+  const data=await response.json();
+  locations=data.locations||[];
+  document.getElementById('message').innerHTML='<div class="status">✓ locaties.json geladen · versie '+esc(data.version)+'</div>';
+  drawMarkers();render();
+ }catch(e){
+  document.getElementById('status').textContent='Locaties konden niet worden geladen.';
+  document.getElementById('message').innerHTML='<div class="error">Fout: locaties.json is niet gevonden.</div>';
+ }
+}
+function drawMarkers(){
+ markers.forEach(m=>map.removeLayer(m));markers=[];
+ locations.forEach(x=>{
+  if(x.lat==null||x.lon==null)return;
+  const m=L.marker([x.lat,x.lon]).addTo(map).bindPopup('<b>'+esc(x.name)+'</b><br>'+esc(x.address||''));
+  m.on('click',()=>openLocationFromMap(x.id));
+  markers.push(m);
+ });
+}
+function updateUserMarker(){
+ if(userLat==null)return;
+ if(userMarker)map.removeLayer(userMarker);
+ if(userCircle)map.removeLayer(userCircle);
+ userMarker=L.circleMarker([userLat,userLon],{radius:8,weight:3,fillOpacity:.9}).addTo(map).bindPopup('<b>Jouw positie</b>');
+ userCircle=L.circle([userLat,userLon],{radius:250,weight:1,fillOpacity:.05}).addTo(map);
+}
+function render(){
+ if(userLat===null){
+  document.getElementById('locations').innerHTML='<div class="card">Druk op 🧪 Testpositie om de app thuis te testen.</div>';
+  return;
+ }
+ const nearby=locations.map(x=>({...x,distance:distance(userLat,userLon,x.lat,x.lon)})).sort((a,b)=>a.distance-b.distance);
+ const within=nearby.filter(x=>x.distance<=500);
+ document.getElementById('status').textContent=within.length+' locatie(s) binnen 500 meter · 250 m is de verhaalzone · positie '+userLat.toFixed(5)+', '+userLon.toFixed(5);
+ document.getElementById('locations').innerHTML=within.length?
+  within.map(x=>`
+   <div class="card" id="card-${esc(x.id)}">
+    <h2>${esc(x.name)}</h2>
+    <div class="meta">${esc(x.type)} · ${formatDistance(x.distance)} · ${esc(x.address||'')}</div>
+    <div style="font-size:22px;font-weight:700;margin:8px 0">📍 ${formatDistance(x.distance)}
+      <span style="font-size:13px;font-weight:400;color:#6c777b"> vanaf jouw positie</span>
+    </div>
+    <div class="story" id="story-${esc(x.id)}">
+      ${x.distance<=250?'Verhaal wordt geladen…':'<span class="meta">Buiten 250 meter — klik op de locatie om het verhaal te bekijken.</span>'}
+    </div>
+   </div>`).join(''):
+  '<div class="card">Geen locaties binnen 500 meter.</div>';
+ within.filter(x=>x.distance<=250).forEach(x=>loadStory(x,false)); renderAllNotes();
+}
+async function loadStory(x,clicked){
+ const el=document.getElementById('story-'+x.id);if(!el)return;
+ try{
+  const response=await fetch(x.content+'?v='+Date.now(),{cache:'no-store'});
+  if(!response.ok)throw new Error();
+  const text=await response.text();
+  const doc=new DOMParser().parseFromString(text,'text/html');
+  el.innerHTML=(doc.querySelector('article')?.innerHTML||doc.body.innerHTML)+
+   '<div class="content-meta">Tekst vastgelegd: <b>22 augustus 2026</b> · Contentversie: <b>v1.1</b></div>';
+ }catch(e){el.textContent='Het locatieverhaal kon niet worden geladen.';}
+}
+function openLocationFromMap(id){
+ const x=locations.find(a=>a.id===id);if(!x)return;
+ if(userLat!==null)x.distance=distance(userLat,userLon,x.lat,x.lon);
+ const card=document.getElementById('card-'+id);
+ if(card)card.scrollIntoView({behavior:'smooth'});
+ if(x.distance<=250){
+  loadStory(x,false);
+ }else{
+  loadStory(x,true);
+ }
+}
+let noteLocationId=null;
+function getNotes(){try{return JSON.parse(localStorage.getItem('ruinekerk_notes_v1')||'{}')}catch(e){return {}}}
+function openNote(id){
+ noteLocationId=id;const x=locations.find(a=>a.id===id);
+ document.getElementById('noteTitle').textContent='📝 '+(x?x.name:'Locatie');
+ document.getElementById('noteType').value='opmerking';
+ document.getElementById('noteDate').value=new Date().toISOString().slice(0,10);
+ document.getElementById('noteText').value='';
+ renderExistingNotes();document.getElementById('noteModal').style.display='block';
+}
+function closeNote(){document.getElementById('noteModal').style.display='none'}
+function saveNote(){
+ const value=document.getElementById('noteText').value.trim();if(!value){alert('Vul eerst een tekst in.');return}
+ const all=getNotes();all[noteLocationId]=all[noteLocationId]||[];
+ all[noteLocationId].push({type:document.getElementById('noteType').value,date:document.getElementById('noteDate').value,text:value});
+ localStorage.setItem('ruinekerk_notes_v1',JSON.stringify(all));
+ document.getElementById('noteText').value='';renderExistingNotes();renderNotesOnCard(noteLocationId);
+}
+function renderExistingNotes(){
+ const notes=getNotes()[noteLocationId]||[];
+ document.getElementById('noteExisting').innerHTML=notes.length?'<h3>Mijn notities</h3>'+notes.map(n=>'<div class="note"><div class="notehead">'+esc(n.type)+' · '+esc(n.date)+'</div>'+esc(n.text)+'</div>').join(''):'<p class="meta">Nog geen notities.</p>';
+}
+function renderNotesOnCard(id){
+ const el=document.getElementById('notes-'+id);if(!el)return;
+ const notes=getNotes()[id]||[];
+ el.innerHTML=notes.map(n=>'<div class="note"><div class="notehead">'+esc(n.type)+' · '+esc(n.date)+'</div>'+esc(n.text)+'</div>').join('');
+}
+function renderAllNotes(){locations.forEach(x=>renderNotesOnCard(x.id));}
+
+function testPosition(){
+ userLat=52.719804;userLon=4.878203;updateUserMarker();map.setView([userLat,userLon],15);render();
+}
+function myPosition(){
+ if(!navigator.geolocation){alert('GPS wordt niet ondersteund.');return;}
+ navigator.geolocation.getCurrentPosition(
+  p=>{userLat=p.coords.latitude;userLon=p.coords.longitude;updateUserMarker();map.setView([userLat,userLon],16);render();},
+  ()=>alert('Locatie kon niet worden bepaald. Controleer de locatie-toestemming.')
+ );
+}
+function showAll(){if(markers.length)map.fitBounds(L.featureGroup(markers).getBounds().pad(.25));}
+loadLocations();
+</script>
+</body>
+</html>
