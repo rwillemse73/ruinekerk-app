@@ -1,0 +1,1 @@
+Kunstpagina's in compacte één-pagina-opmaak. Feitelijke informatie, geen JPG. Officiële website alleen wanneer vastgesteld.
