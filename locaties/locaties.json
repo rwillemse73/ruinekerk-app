@@ -1,0 +1,592 @@
+{
+  "version": "1.0",
+  "categorie": "locaties",
+  "gps_method": "web research + Trekvogelpad route context; route_estimate used for parks/forests/estates where the route-entry point is inferred",
+  "locations": [
+    {
+      "id": "amerongen-amerongse-bos-en-amerongse-berg",
+      "naam": "Amerongse Bos en Amerongse Berg",
+      "html": "amerongen__amerongse-bos-en-amerongse-berg.html",
+      "latitude": 52.0081,
+      "longitude": 5.4829,
+      "gps_status": "exact_web",
+      "type": "locaties"
+    },
+    {
+      "id": "amerongen-amerongse-bovenpolder",
+      "naam": "Amerongse Bovenpolder",
+      "html": "amerongen__amerongse-bovenpolder.html",
+      "latitude": 51.9913,
+      "longitude": 5.4688,
+      "gps_status": "exact_web",
+      "type": "locaties"
+    },
+    {
+      "id": "amerongen-dorpsakker-de-parel",
+      "naam": "Dorpsakker De Parel",
+      "html": "amerongen__dorpsakker-de-parel.html",
+      "latitude": 52.0008,
+      "longitude": 5.465,
+      "gps_status": "address_estimate",
+      "type": "locaties"
+    },
+    {
+      "id": "amerongen-historische-begraafplaats-amerongen",
+      "naam": "Historische begraafplaats Amerongen",
+      "html": "amerongen__historische-begraafplaats-amerongen.html",
+      "latitude": 51.9997,
+      "longitude": 5.4718,
+      "gps_status": "estimated",
+      "type": "locaties"
+    },
+    {
+      "id": "amerongen-historische-dorpskern-amerongen",
+      "naam": "Historische dorpskern Amerongen",
+      "html": "amerongen__historische-dorpskern-amerongen.html",
+      "latitude": 51.9995,
+      "longitude": 5.4615,
+      "gps_status": "estimated",
+      "type": "locaties"
+    },
+    {
+      "id": "amerongen-kasteel-amerongen",
+      "naam": "Kasteel Amerongen",
+      "html": "amerongen__kasteel-amerongen.html",
+      "latitude": 51.9954,
+      "longitude": 5.4585,
+      "gps_status": "exact_web",
+      "type": "locaties"
+    },
+    {
+      "id": "amerongen-lievendaal",
+      "naam": "Lievendaal",
+      "html": "amerongen__lievendaal.html",
+      "latitude": 51.997282,
+      "longitude": 5.463372,
+      "gps_status": "exact_web",
+      "type": "locaties"
+    },
+    {
+      "id": "amerongen-natewisch",
+      "naam": "Natewisch",
+      "html": "amerongen__natewisch.html",
+      "latitude": 51.979,
+      "longitude": 5.3913,
+      "gps_status": "exact_web",
+      "type": "locaties"
+    },
+    {
+      "id": "amerongen-tabakserfgoed-amerongen",
+      "naam": "Tabakserfgoed Amerongen",
+      "html": "amerongen__tabakserfgoed-amerongen.html",
+      "latitude": 51.998916,
+      "longitude": 5.461459,
+      "gps_status": "exact_web",
+      "type": "locaties"
+    },
+    {
+      "id": "austerlitz-austerlitzse-bos-boswachterij-austerlitz",
+      "naam": "Austerlitzse Bos / Boswachterij Austerlitz",
+      "html": "austerlitz__austerlitzse-bos-boswachterij-austerlitz.html",
+      "latitude": 52.0872,
+      "longitude": 5.3383,
+      "gps_status": "route_estimate",
+      "type": "locaties"
+    },
+    {
+      "id": "austerlitz-buitenplaatsen-rond-austerlitz",
+      "naam": "Buitenplaatsen rond Austerlitz",
+      "html": "austerlitz__buitenplaatsen-rond-austerlitz.html",
+      "latitude": 52.083,
+      "longitude": 5.327,
+      "gps_status": "route_estimate",
+      "type": "locaties"
+    },
+    {
+      "id": "austerlitz-historisch-dorpscentrum-austerlitz",
+      "naam": "Historisch dorpscentrum Austerlitz",
+      "html": "austerlitz__historisch-dorpscentrum-austerlitz.html",
+      "latitude": 52.0797,
+      "longitude": 5.3167,
+      "gps_status": "estimated",
+      "type": "locaties"
+    },
+    {
+      "id": "austerlitz-oude-postweg",
+      "naam": "Oude Postweg",
+      "html": "austerlitz__oude-postweg.html",
+      "latitude": 52.08241,
+      "longitude": 5.30955,
+      "gps_status": "exact_web",
+      "type": "locaties"
+    },
+    {
+      "id": "austerlitz-pyramide-van-austerlitz",
+      "naam": "Pyramide van Austerlitz",
+      "html": "austerlitz__pyramide-van-austerlitz.html",
+      "latitude": 52.09042,
+      "longitude": 5.34279,
+      "gps_status": "exact_web",
+      "type": "locaties"
+    },
+    {
+      "id": "darthuizen-darthuizerberg-darthuizerbossen",
+      "naam": "Darthuizerberg / Darthuizerbossen",
+      "html": "darthuizen__darthuizerberg-darthuizerbossen.html",
+      "latitude": 52.0156,
+      "longitude": 5.41619,
+      "gps_status": "exact_web",
+      "type": "locaties"
+    },
+    {
+      "id": "darthuizen-darthuizerpoort",
+      "naam": "Darthuizerpoort",
+      "html": "darthuizen__darthuizerpoort.html",
+      "latitude": 52.0253,
+      "longitude": 5.41128,
+      "gps_status": "exact_web",
+      "type": "locaties"
+    },
+    {
+      "id": "darthuizen-donderberg",
+      "naam": "Donderberg",
+      "html": "darthuizen__donderberg.html",
+      "latitude": 52.016682,
+      "longitude": 5.415368,
+      "gps_status": "exact_web",
+      "type": "locaties"
+    },
+    {
+      "id": "doorn-aardenburg",
+      "naam": "Aardenburg",
+      "html": "doorn__aardenburg.html",
+      "latitude": 52.0305,
+      "longitude": 5.3415,
+      "gps_status": "estimated",
+      "type": "locaties"
+    },
+    {
+      "id": "doorn-de-ruiterberg",
+      "naam": "De Ruiterberg",
+      "html": "doorn__de-ruiterberg.html",
+      "latitude": 52.0398,
+      "longitude": 5.37273,
+      "gps_status": "exact_web",
+      "type": "locaties"
+    },
+    {
+      "id": "doorn-doornse-gat",
+      "naam": "Doornse Gat",
+      "html": "doorn__doornse-gat.html",
+      "latitude": 52.0385,
+      "longitude": 5.3885,
+      "gps_status": "route_estimate",
+      "type": "locaties"
+    },
+    {
+      "id": "doorn-huis-doorn",
+      "naam": "Huis Doorn",
+      "html": "doorn__huis-doorn.html",
+      "latitude": 52.0314,
+      "longitude": 5.3388,
+      "gps_status": "exact_web",
+      "type": "locaties"
+    },
+    {
+      "id": "doorn-kaapse-bossen",
+      "naam": "Kaapse Bossen",
+      "html": "doorn__kaapse-bossen.html",
+      "latitude": 52.042,
+      "longitude": 5.374,
+      "gps_status": "route_estimate",
+      "type": "locaties"
+    },
+    {
+      "id": "doorn-landgoed-zonheuvel",
+      "naam": "Landgoed Zonheuvel",
+      "html": "doorn__landgoed-zonheuvel.html",
+      "latitude": 52.04912,
+      "longitude": 5.35369,
+      "gps_status": "exact_web",
+      "type": "locaties"
+    },
+    {
+      "id": "doorn-maartenskerk-en-kerkplein",
+      "naam": "Maartenskerk en Kerkplein",
+      "html": "doorn__maartenskerk-en-kerkplein.html",
+      "latitude": 52.03389,
+      "longitude": 5.34417,
+      "gps_status": "exact_web",
+      "type": "locaties"
+    },
+    {
+      "id": "doorn-nationaal-bomenmuseum-gimborn",
+      "naam": "Nationaal Bomenmuseum Gimborn",
+      "html": "doorn__nationaal-bomenmuseum-gimborn.html",
+      "latitude": 52.03517,
+      "longitude": 5.31472,
+      "gps_status": "exact_web",
+      "type": "locaties"
+    },
+    {
+      "id": "doorn-schoonoord",
+      "naam": "Schoonoord",
+      "html": "doorn__schoonoord.html",
+      "latitude": 52.03194,
+      "longitude": 5.34639,
+      "gps_status": "exact_web",
+      "type": "locaties"
+    },
+    {
+      "id": "elst-utrecht-elsterbos",
+      "naam": "Elsterbos",
+      "html": "elst-utrecht__elsterbos.html",
+      "latitude": 51.986,
+      "longitude": 5.505,
+      "gps_status": "route_estimate",
+      "type": "locaties"
+    },
+    {
+      "id": "elst-utrecht-galgenberg-en-grafheuvels",
+      "naam": "Galgenberg en grafheuvels",
+      "html": "elst-utrecht__galgenberg-en-grafheuvels.html",
+      "latitude": 51.99761,
+      "longitude": 5.49616,
+      "gps_status": "exact_web",
+      "type": "locaties"
+    },
+    {
+      "id": "elst-utrecht-historische-grensmarkering-amerongenrhenen",
+      "naam": "Historische grensmarkering Amerongen–Rhenen",
+      "html": "elst-utrecht__historische-grensmarkering-amerongenrhenen.html",
+      "latitude": 51.99761,
+      "longitude": 5.49616,
+      "gps_status": "exact_web",
+      "type": "locaties"
+    },
+    {
+      "id": "elst-utrecht-historische-kern-elst",
+      "naam": "Historische kern Elst",
+      "html": "elst-utrecht__historische-kern-elst.html",
+      "latitude": 51.9825,
+      "longitude": 5.5025,
+      "gps_status": "estimated",
+      "type": "locaties"
+    },
+    {
+      "id": "elst-utrecht-nederrijn-en-uiterwaarden-elst",
+      "naam": "Nederrijn en uiterwaarden Elst",
+      "html": "elst-utrecht__nederrijn-en-uiterwaarden-elst.html",
+      "latitude": 51.969,
+      "longitude": 5.506,
+      "gps_status": "route_estimate",
+      "type": "locaties"
+    },
+    {
+      "id": "elst-utrecht-raatakkers",
+      "naam": "Raatakkers",
+      "html": "elst-utrecht__raatakkers.html",
+      "latitude": 51.992,
+      "longitude": 5.499,
+      "gps_status": "estimated",
+      "type": "locaties"
+    },
+    {
+      "id": "elst-utrecht-tempel-kerk-museum-elst",
+      "naam": "Tempel-Kerk Museum Elst",
+      "html": "elst-utrecht__tempel-kerk-museum-elst.html",
+      "latitude": 51.9845,
+      "longitude": 5.502,
+      "gps_status": "estimated",
+      "type": "locaties"
+    },
+    {
+      "id": "langbroek-historische-kern-langbroek",
+      "naam": "Historische kern Langbroek",
+      "html": "langbroek__historische-kern-langbroek.html",
+      "latitude": 52.0035,
+      "longitude": 5.342,
+      "gps_status": "route_estimate",
+      "type": "locaties"
+    },
+    {
+      "id": "langbroek-kasteel-lunenburg",
+      "naam": "Kasteel Lunenburg",
+      "html": "langbroek__kasteel-lunenburg.html",
+      "latitude": 52.01152,
+      "longitude": 5.32056,
+      "gps_status": "exact_web",
+      "type": "locaties"
+    },
+    {
+      "id": "langbroek-kasteel-walenburg",
+      "naam": "Kasteel Walenburg",
+      "html": "langbroek__kasteel-walenburg.html",
+      "latitude": 52.00618,
+      "longitude": 5.33857,
+      "gps_status": "exact_web",
+      "type": "locaties"
+    },
+    {
+      "id": "langbroek-kasteel-weerdesteyn",
+      "naam": "Kasteel Weerdesteyn",
+      "html": "langbroek__kasteel-weerdesteyn.html",
+      "latitude": 52.01123,
+      "longitude": 5.29992,
+      "gps_status": "exact_web",
+      "type": "locaties"
+    },
+    {
+      "id": "langbroek-landgoederenzone-langbroekerwetering",
+      "naam": "Landgoederenzone Langbroekerwetering",
+      "html": "langbroek__landgoederenzone-langbroekerwetering.html",
+      "latitude": 52.007,
+      "longitude": 5.33,
+      "gps_status": "route_estimate",
+      "type": "locaties"
+    },
+    {
+      "id": "langbroek-sandenburg",
+      "naam": "Sandenburg",
+      "html": "langbroek__sandenburg.html",
+      "latitude": 52.00727,
+      "longitude": 5.3462,
+      "gps_status": "exact_web",
+      "type": "locaties"
+    },
+    {
+      "id": "leersum-boswachterij-leersum",
+      "naam": "Boswachterij Leersum",
+      "html": "leersum__boswachterij-leersum.html",
+      "latitude": 52.03333,
+      "longitude": 5.45,
+      "gps_status": "route_estimate",
+      "type": "locaties"
+    },
+    {
+      "id": "leersum-historische-kern-leersum",
+      "naam": "Historische kern Leersum",
+      "html": "leersum__historische-kern-leersum.html",
+      "latitude": 52.0115,
+      "longitude": 5.428,
+      "gps_status": "estimated",
+      "type": "locaties"
+    },
+    {
+      "id": "leersum-landgoed-zuylestein",
+      "naam": "Landgoed Zuylestein",
+      "html": "leersum__landgoed-zuylestein.html",
+      "latitude": 52.00165,
+      "longitude": 5.44172,
+      "gps_status": "exact_web",
+      "type": "locaties"
+    },
+    {
+      "id": "leersum-leersumse-veld-en-leersumse-plassen",
+      "naam": "Leersumse Veld en Leersumse Plassen",
+      "html": "leersum__leersumse-veld-en-leersumse-plassen.html",
+      "latitude": 52.04174,
+      "longitude": 5.43952,
+      "gps_status": "exact_web",
+      "type": "locaties"
+    },
+    {
+      "id": "leersum-parc-broekhuizen",
+      "naam": "Parc Broekhuizen",
+      "html": "leersum__parc-broekhuizen.html",
+      "latitude": 52.00778,
+      "longitude": 5.39988,
+      "gps_status": "exact_web",
+      "type": "locaties"
+    },
+    {
+      "id": "leersum-uilentoren",
+      "naam": "Uilentoren",
+      "html": "leersum__uilentoren.html",
+      "latitude": 52.01795,
+      "longitude": 5.42882,
+      "gps_status": "exact_web",
+      "type": "locaties"
+    },
+    {
+      "id": "maarn-buitenplaats-t-stort",
+      "naam": "Buitenplaats ’t Stort",
+      "html": "maarn__buitenplaats-t-stort.html",
+      "latitude": 52.063,
+      "longitude": 5.372,
+      "gps_status": "address_estimate",
+      "type": "locaties"
+    },
+    {
+      "id": "maarn-grafheuvel-de-halm",
+      "naam": "Grafheuvel De Halm",
+      "html": "maarn__grafheuvel-de-halm.html",
+      "latitude": 52.067,
+      "longitude": 5.372,
+      "gps_status": "estimated",
+      "type": "locaties"
+    },
+    {
+      "id": "maarn-henschotermeer",
+      "naam": "Henschotermeer",
+      "html": "maarn__henschotermeer.html",
+      "latitude": 52.08114,
+      "longitude": 5.37304,
+      "gps_status": "exact_web",
+      "type": "locaties"
+    },
+    {
+      "id": "maarn-het-berghuisje",
+      "naam": "Het Berghuisje",
+      "html": "maarn__het-berghuisje.html",
+      "latitude": 52.08088,
+      "longitude": 5.34794,
+      "gps_status": "exact_web",
+      "type": "locaties"
+    },
+    {
+      "id": "maarn-historische-spooromgeving-maarn",
+      "naam": "Historische spooromgeving Maarn",
+      "html": "maarn__historische-spooromgeving-maarn.html",
+      "latitude": 52.0645,
+      "longitude": 5.37,
+      "gps_status": "estimated",
+      "type": "locaties"
+    },
+    {
+      "id": "maarn-huis-te-maarn",
+      "naam": "Huis te Maarn",
+      "html": "maarn__huis-te-maarn.html",
+      "latitude": 52.04906,
+      "longitude": 5.36295,
+      "gps_status": "exact_web",
+      "type": "locaties"
+    },
+    {
+      "id": "maarn-maarnse-bossen",
+      "naam": "Maarnse Bossen",
+      "html": "maarn__maarnse-bossen.html",
+      "latitude": 52.07,
+      "longitude": 5.35,
+      "gps_status": "route_estimate",
+      "type": "locaties"
+    },
+    {
+      "id": "maarn-zwerfsteneneiland",
+      "naam": "Zwerfsteneneiland",
+      "html": "maarn__zwerfsteneneiland.html",
+      "latitude": 52.063,
+      "longitude": 5.377,
+      "gps_status": "estimated",
+      "type": "locaties"
+    },
+    {
+      "id": "rhenen-blauwe-kamer-en-nederrijnse-uiterwaarden",
+      "naam": "Blauwe Kamer en Nederrijnse uiterwaarden",
+      "html": "rhenen__blauwe-kamer-en-nederrijnse-uiterwaarden.html",
+      "latitude": 51.948,
+      "longitude": 5.6134,
+      "gps_status": "exact_web",
+      "type": "locaties"
+    },
+    {
+      "id": "rhenen-cunerabergje",
+      "naam": "Cunerabergje",
+      "html": "rhenen__cunerabergje.html",
+      "latitude": 51.955,
+      "longitude": 5.565,
+      "gps_status": "estimated",
+      "type": "locaties"
+    },
+    {
+      "id": "rhenen-cunerakerk-en-cuneratoren",
+      "naam": "Cunerakerk en Cuneratoren",
+      "html": "rhenen__cunerakerk-en-cuneratoren.html",
+      "latitude": 51.95693,
+      "longitude": 5.5645,
+      "gps_status": "exact_web",
+      "type": "locaties"
+    },
+    {
+      "id": "rhenen-grebbeberg",
+      "naam": "Grebbeberg",
+      "html": "rhenen__grebbeberg.html",
+      "latitude": 51.95179,
+      "longitude": 5.60089,
+      "gps_status": "exact_web",
+      "type": "locaties"
+    },
+    {
+      "id": "rhenen-heimenberg",
+      "naam": "Heimenberg",
+      "html": "rhenen__heimenberg.html",
+      "latitude": 51.95238,
+      "longitude": 5.60318,
+      "gps_status": "exact_web",
+      "type": "locaties"
+    },
+    {
+      "id": "rhenen-historische-binnenstad-rhenen",
+      "naam": "Historische binnenstad Rhenen",
+      "html": "rhenen__historische-binnenstad-rhenen.html",
+      "latitude": 51.9568,
+      "longitude": 5.565,
+      "gps_status": "estimated",
+      "type": "locaties"
+    },
+    {
+      "id": "rhenen-kwintelooijen",
+      "naam": "Kwintelooijen",
+      "html": "rhenen__kwintelooijen.html",
+      "latitude": 51.98896,
+      "longitude": 5.55235,
+      "gps_status": "exact_web",
+      "type": "locaties"
+    },
+    {
+      "id": "rhenen-militair-ereveld-grebbeberg",
+      "naam": "Militair Ereveld Grebbeberg",
+      "html": "rhenen__militair-ereveld-grebbeberg.html",
+      "latitude": 51.9535,
+      "longitude": 5.6025,
+      "gps_status": "route_estimate",
+      "type": "locaties"
+    },
+    {
+      "id": "rhenen-ouwehands-dierenpark",
+      "naam": "Ouwehands Dierenpark",
+      "html": "rhenen__ouwehands-dierenpark.html",
+      "latitude": 51.95804,
+      "longitude": 5.58997,
+      "gps_status": "exact_web",
+      "type": "locaties"
+    },
+    {
+      "id": "rhenen-rijnkade-en-passantenhaven",
+      "naam": "Rijnkade en Passantenhaven",
+      "html": "rhenen__rijnkade-en-passantenhaven.html",
+      "latitude": 51.956,
+      "longitude": 5.571,
+      "gps_status": "estimated",
+      "type": "locaties"
+    },
+    {
+      "id": "rhenen-stadsmuseum-rhenen",
+      "naam": "Stadsmuseum Rhenen",
+      "html": "rhenen__stadsmuseum-rhenen.html",
+      "latitude": 51.95683,
+      "longitude": 5.5652,
+      "gps_status": "exact_web",
+      "type": "locaties"
+    },
+    {
+      "id": "rhenen-stadsmuur-rhenen",
+      "naam": "Stadsmuur Rhenen",
+      "html": "rhenen__stadsmuur-rhenen.html",
+      "latitude": 51.9565,
+      "longitude": 5.566,
+      "gps_status": "estimated",
+      "type": "locaties"
+    }
+  ]
+}
