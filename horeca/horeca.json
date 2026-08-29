@@ -1,0 +1,387 @@
+{
+  "version": "1.1",
+  "categorie": "horeca",
+  "gps_source": "adres / web-gecontroleerd; exacte correcties waar broncoördinaten beschikbaar",
+  "locations": [
+    {
+      "id": "lorijn-eten-drinken",
+      "naam": "Lorijn eten | drinken",
+      "type": "horeca",
+      "html": "lorijn-eten-drinken.html",
+      "latitude": 52.0192,
+      "longitude": 5.423,
+      "gps_status": "estimated",
+      "adres": "Rijksstraatweg 3, 3956 CH Leersum"
+    },
+    {
+      "id": "de-proloog",
+      "naam": "De Proloog",
+      "type": "horeca",
+      "html": "de-proloog.html",
+      "latitude": 52.0004,
+      "longitude": 5.4584,
+      "gps_status": "estimated",
+      "adres": "Allemanswaard 27, 3958 KA Amerongen"
+    },
+    {
+      "id": "ijssalon-zazu",
+      "naam": "IJssalon Zazu",
+      "type": "horeca",
+      "html": "ijssalon-zazu.html",
+      "latitude": 52.0592,
+      "longitude": 5.37,
+      "gps_status": "estimated",
+      "adres": "Raadhuislaan 16, 3951 CH Maarn"
+    },
+    {
+      "id": "mas-montagne",
+      "naam": "Mas Montagne",
+      "type": "horeca",
+      "html": "mas-montagne.html",
+      "latitude": 52.0036,
+      "longitude": 5.47867,
+      "gps_status": "address-verified",
+      "adres": "Veenseweg 28, 3958 ET Amerongen"
+    },
+    {
+      "id": "historische-theetuin-bartim-us",
+      "naam": "Historische Theetuin Bartiméus",
+      "type": "horeca",
+      "html": "historische-theetuin-bartim-us.html",
+      "latitude": 52.0402,
+      "longitude": 5.346,
+      "gps_status": "estimated",
+      "adres": "Driebergsestraatweg 44, 3941 ZX Doorn"
+    },
+    {
+      "id": "koffiebar-lunchwinkel-heerlijk",
+      "naam": "Koffiebar &amp; Lunchwinkel Heerlijk",
+      "type": "horeca",
+      "html": "koffiebar-lunchwinkel-heerlijk.html",
+      "latitude": 52.0598,
+      "longitude": 5.3686,
+      "gps_status": "estimated",
+      "adres": "Maarnse Grindweg 10B, 3951 LK Maarn"
+    },
+    {
+      "id": "spott-eten-drinken",
+      "naam": "SPOTT Eten &amp; Drinken",
+      "type": "horeca",
+      "html": "spott-eten-drinken.html",
+      "latitude": 52.0338712,
+      "longitude": 5.3444168,
+      "gps_status": "address-verified",
+      "adres": "Dorpsstraat 29, 3941 JK Doorn"
+    },
+    {
+      "id": "de-pyramide-van-austerlitz",
+      "naam": "De Pyramide van Austerlitz",
+      "type": "horeca",
+      "html": "de-pyramide-van-austerlitz.html",
+      "latitude": 52.0808,
+      "longitude": 5.377,
+      "gps_status": "estimated",
+      "adres": "Zeisterweg 98, 3931 MG Woudenberg"
+    },
+    {
+      "id": "liz-restobar",
+      "naam": "LIZ Restobar",
+      "type": "horeca",
+      "html": "liz-restobar.html",
+      "latitude": 51.997248,
+      "longitude": 5.459499,
+      "gps_status": "address-verified",
+      "adres": "Drostestraat 12, 3958 BK Amerongen"
+    },
+    {
+      "id": "restaurant-reynaert",
+      "naam": "Restaurant Reynaert",
+      "type": "horeca",
+      "html": "restaurant-reynaert.html",
+      "latitude": 52.0579,
+      "longitude": 5.3704,
+      "gps_status": "address-verified",
+      "adres": "Tuindorpweg 33, 3951 BD Maarn"
+    },
+    {
+      "id": "ouwekamp-ons-eetcaf",
+      "naam": "Ouwekamp, ons eetcafé",
+      "type": "horeca",
+      "html": "ouwekamp-ons-eetcaf.html",
+      "latitude": 52.0787876,
+      "longitude": 5.3138859,
+      "gps_status": "address-verified",
+      "adres": "Oude Postweg 144, 3711 AL Austerlitz"
+    },
+    {
+      "id": "piatto",
+      "naam": "Piatto",
+      "type": "horeca",
+      "html": "piatto.html",
+      "latitude": 51.959,
+      "longitude": 5.567,
+      "gps_status": "estimated",
+      "adres": "Frederik van de Paltshof 7, 3911 LA Rhenen"
+    },
+    {
+      "id": "de-notabelen",
+      "naam": "De Notabelen",
+      "type": "horeca",
+      "html": "de-notabelen.html",
+      "latitude": 52.0346094,
+      "longitude": 5.3458683,
+      "gps_status": "address-verified",
+      "adres": "Plein 1923 14, 3941 ER Doorn"
+    },
+    {
+      "id": "brasserie-rodestein",
+      "naam": "Brasserie Rodestein",
+      "type": "horeca",
+      "html": "brasserie-rodestein.html",
+      "latitude": 52.0316695,
+      "longitude": 5.3459977,
+      "gps_status": "address-verified",
+      "adres": "Sitiopark 10, 3941 PP Doorn"
+    },
+    {
+      "id": "restaurant-hotel-buitenlust",
+      "naam": "Restaurant Hotel Buitenlust",
+      "type": "horeca",
+      "html": "restaurant-hotel-buitenlust.html",
+      "latitude": 51.999383,
+      "longitude": 5.463327,
+      "gps_status": "address-verified",
+      "adres": "Burg. Jhr. H. van den Boschstraat 13, 3958 CA Amerongen"
+    },
+    {
+      "id": "johnnies-concept",
+      "naam": "Johnnies Concept",
+      "type": "horeca",
+      "html": "johnnies-concept.html",
+      "latitude": 52.0148,
+      "longitude": 5.426,
+      "gps_status": "estimated",
+      "adres": "Rijksstraatweg 64, 3956 CS Leersum"
+    },
+    {
+      "id": "de-remise",
+      "naam": "De Remise",
+      "type": "horeca",
+      "html": "de-remise.html",
+      "latitude": 52.0128289,
+      "longitude": 5.4252487,
+      "gps_status": "address-verified",
+      "adres": "Hoflaan 2, 3956 EE Leersum"
+    },
+    {
+      "id": "caf-de-keizer",
+      "naam": "Café De Keizer",
+      "type": "horeca",
+      "html": "caf-de-keizer.html",
+      "latitude": 52.0352,
+      "longitude": 5.3447,
+      "gps_status": "estimated",
+      "adres": "Acacialaan 14, 3941 JR Doorn"
+    },
+    {
+      "id": "martino-ijs",
+      "naam": "Martino IJs",
+      "type": "horeca",
+      "html": "martino-ijs.html",
+      "latitude": 52.014,
+      "longitude": 5.427,
+      "gps_status": "estimated",
+      "adres": "Rijksstraatweg 151, 3956 CL Leersum"
+    },
+    {
+      "id": "moeke-rhenen",
+      "naam": "Moeke Rhenen",
+      "type": "horeca",
+      "html": "moeke-rhenen.html",
+      "latitude": 51.9588,
+      "longitude": 5.5668,
+      "gps_status": "estimated",
+      "adres": "Veerplein 1, 3911 TN Rhenen"
+    },
+    {
+      "id": "magnolia",
+      "naam": "Magnolia",
+      "type": "horeca",
+      "html": "magnolia.html",
+      "latitude": 51.9560293,
+      "longitude": 5.5893579,
+      "gps_status": "address-verified",
+      "adres": "Grebbeweg 103-105, 3911 AV Rhenen"
+    },
+    {
+      "id": "bistro-lof",
+      "naam": "Bistro LOF",
+      "type": "horeca",
+      "html": "bistro-lof.html",
+      "latitude": 52.0079,
+      "longitude": 5.3987,
+      "gps_status": "estimated",
+      "adres": "Broekhuizerlaan 2, 3956 NS Leersum"
+    },
+    {
+      "id": "dorpshuis-hart-van-austerlitz",
+      "naam": "Dorpshuis Hart van Austerlitz",
+      "type": "horeca",
+      "html": "dorpshuis-hart-van-austerlitz.html",
+      "latitude": 52.0792991,
+      "longitude": 5.3149304,
+      "gps_status": "exact",
+      "adres": "Schoolweg 2, 3711 BP Austerlitz"
+    },
+    {
+      "id": "t-kalkoentje",
+      "naam": "’t Kalkoentje",
+      "type": "horeca",
+      "html": "t-kalkoentje.html",
+      "latitude": 51.9512,
+      "longitude": 5.59,
+      "gps_status": "address-verified",
+      "adres": "Utrechtsestraatweg 143, 3911 TS Rhenen"
+    },
+    {
+      "id": "restaurant-voltaire",
+      "naam": "Restaurant Voltaire",
+      "type": "horeca",
+      "html": "restaurant-voltaire.html",
+      "latitude": 52.0087654,
+      "longitude": 5.4003259,
+      "gps_status": "exact",
+      "adres": "Broekhuizerlaan 2, 3956 NS Leersum"
+    },
+    {
+      "id": "house-of-bird-kwintelooijen",
+      "naam": "House of Bird Kwintelooijen",
+      "type": "horeca",
+      "html": "house-of-bird-kwintelooijen.html",
+      "latitude": 51.9931,
+      "longitude": 5.55463,
+      "gps_status": "address-verified",
+      "adres": "Oude Veensegrindweg 47, 3911 TA Rhenen"
+    },
+    {
+      "id": "barbecue-restaurant-de-heuvelrug",
+      "naam": "Barbecue-restaurant De Heuvelrug",
+      "type": "horeca",
+      "html": "barbecue-restaurant-de-heuvelrug.html",
+      "latitude": 52.018417,
+      "longitude": 5.439593,
+      "gps_status": "address-verified",
+      "adres": "Scherpenzeelseweg 45a, 3956 KB Leersum"
+    },
+    {
+      "id": "restaurant-t-kerkplein",
+      "naam": "Restaurant ’t Kerkplein",
+      "type": "horeca",
+      "html": "restaurant-t-kerkplein.html",
+      "latitude": 52.01,
+      "longitude": 5.426,
+      "gps_status": "address-verified",
+      "adres": "Kerkplein 6, 3956 BW Leersum"
+    },
+    {
+      "id": "beauforthuis",
+      "naam": "Beauforthuis",
+      "type": "horeca",
+      "html": "beauforthuis.html",
+      "latitude": 52.0878428,
+      "longitude": 5.3028882,
+      "gps_status": "address-verified",
+      "adres": "Woudenbergseweg 70, 3711 AB Austerlitz"
+    },
+    {
+      "id": "gasterij-de-kluis",
+      "naam": "Gasterij De Kluis",
+      "type": "horeca",
+      "html": "gasterij-de-kluis.html",
+      "latitude": 52.034707933137,
+      "longitude": 5.3463938723852,
+      "gps_status": "address-verified",
+      "adres": "Plein 1923 24, 3941 ER Doorn"
+    },
+    {
+      "id": "grand-caf-reyck",
+      "naam": "Grand Café Reyck",
+      "type": "horeca",
+      "html": "grand-caf-reyck.html",
+      "latitude": 52.0401,
+      "longitude": 5.3439,
+      "gps_status": "estimated",
+      "adres": "Driebergsestraatweg 10, 3941 ZX Doorn"
+    },
+    {
+      "id": "de-koning-van-denemarken",
+      "naam": "De Koning van Denemarken",
+      "type": "horeca",
+      "html": "de-koning-van-denemarken.html",
+      "latitude": 51.958435507518,
+      "longitude": 5.5623073168051,
+      "gps_status": "address-verified",
+      "adres": "Utrechtsestraatweg 2, 3911 TT Rhenen"
+    },
+    {
+      "id": "parkhuys-rosarium",
+      "naam": "Parkhuys Rosarium",
+      "type": "horeca",
+      "html": "parkhuys-rosarium.html",
+      "latitude": 52.033395,
+      "longitude": 5.338983,
+      "gps_status": "address-verified",
+      "adres": "Molenweg 4, 3941 PT Doorn"
+    },
+    {
+      "id": "de-rode-leeuw-no-35",
+      "naam": "De Rode Leeuw No.35",
+      "type": "horeca",
+      "html": "de-rode-leeuw-no-35.html",
+      "latitude": 51.996713,
+      "longitude": 5.455794,
+      "gps_status": "address-verified",
+      "adres": "Drostestraat 35, 3958 BK Amerongen"
+    },
+    {
+      "id": "3-zussen",
+      "naam": "3 Zussen",
+      "type": "horeca",
+      "html": "3-zussen.html",
+      "latitude": 51.984,
+      "longitude": 5.5678,
+      "gps_status": "address-verified",
+      "adres": "Kerkewijk Zuid 115, 3911 SC Rhenen"
+    },
+    {
+      "id": "vino-y-mas",
+      "naam": "Vino y Mas",
+      "type": "horeca",
+      "html": "vino-y-mas.html",
+      "latitude": 51.9585,
+      "longitude": 5.5705,
+      "gps_status": "address-verified",
+      "adres": "Herenstraat 1, 3911 JA Rhenen"
+    },
+    {
+      "id": "restaurant-t-vosje",
+      "naam": "Restaurant ’t Vosje",
+      "type": "horeca",
+      "html": "restaurant-t-vosje.html",
+      "latitude": 52.0608882,
+      "longitude": 5.3865907,
+      "gps_status": "address-verified",
+      "adres": "Planetenbaan 9, 3951 EH Maarn"
+    },
+    {
+      "id": "bistr-t-chez-charlotte",
+      "naam": "Bistrôt Chez Charlotte",
+      "type": "horeca",
+      "html": "bistr-t-chez-charlotte.html",
+      "latitude": 52.0398,
+      "longitude": 5.347,
+      "gps_status": "estimated",
+      "adres": "Driebergsestraatweg 54, 3941 ZX Doorn"
+    }
+  ]
+}
