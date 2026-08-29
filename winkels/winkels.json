@@ -1,0 +1,330 @@
+{
+  "version": "1.0",
+  "categorie": "winkels",
+  "locations": [
+    {
+      "id": "albert_heijn_doorn",
+      "naam": "🛍️ Albert Heijn Doorn",
+      "html": "albert_heijn_doorn.html",
+      "latitude": 52.0347496,
+      "longitude": 5.3442449,
+      "gps_status": "exact",
+      "type": "winkels"
+    },
+    {
+      "id": "albert_heijn_rhenen",
+      "naam": "🛍️ Albert Heijn Rhenen",
+      "html": "albert_heijn_rhenen.html",
+      "latitude": 51.960876,
+      "longitude": 5.57222,
+      "gps_status": "estimated",
+      "type": "winkels"
+    },
+    {
+      "id": "bakkerij_wim_aalbertsen_langbroek",
+      "naam": "🛍️ Bakkerij Wim Aalbertsen – Langbroek",
+      "html": "bakkerij_wim_aalbertsen_langbroek.html",
+      "latitude": 52.0120696,
+      "longitude": 5.3213597,
+      "gps_status": "estimated",
+      "type": "winkels"
+    },
+    {
+      "id": "bij_ons_boerderijwinkel",
+      "naam": "🛍️ Bij Ons boerderijwinkel",
+      "html": "bij_ons_boerderijwinkel.html",
+      "latitude": 52.0313026,
+      "longitude": 5.3454807,
+      "gps_status": "estimated",
+      "type": "winkels"
+    },
+    {
+      "id": "boekhandel_boek_en_koek",
+      "naam": "🛍️ Boekhandel Boek en Koek",
+      "html": "boekhandel_boek_en_koek.html",
+      "latitude": 52.0645,
+      "longitude": 5.3717,
+      "gps_status": "estimated",
+      "type": "winkels"
+    },
+    {
+      "id": "boerderijwinkel_boerderij_langbroek",
+      "naam": "🛍️ Boerderijwinkel Boerderij Langbroek",
+      "html": "boerderijwinkel_boerderij_langbroek.html",
+      "latitude": 52.0113,
+      "longitude": 5.326,
+      "gps_status": "estimated",
+      "type": "winkels"
+    },
+    {
+      "id": "buurtsuper_austerlitz",
+      "naam": "🛍️ Buurtsuper Austerlitz",
+      "html": "buurtsuper_austerlitz.html",
+      "latitude": 52.083845,
+      "longitude": 5.312365,
+      "gps_status": "estimated",
+      "type": "winkels"
+    },
+    {
+      "id": "de_buurman_wijnspeciaalzaak",
+      "naam": "🛍️ De Buurman Wijnspeciaalzaak",
+      "html": "de_buurman_wijnspeciaalzaak.html",
+      "latitude": 52.0359612,
+      "longitude": 5.3445487,
+      "gps_status": "estimated",
+      "type": "winkels"
+    },
+    {
+      "id": "de_goudreinet",
+      "naam": "🛍️ De Goudreinet",
+      "html": "de_goudreinet.html",
+      "latitude": 51.960876,
+      "longitude": 5.57222,
+      "gps_status": "estimated",
+      "type": "winkels"
+    },
+    {
+      "id": "gall_gall_rhenen",
+      "naam": "🛍️ Gall &amp; Gall Rhenen",
+      "html": "gall_gall_rhenen.html",
+      "latitude": 51.960876,
+      "longitude": 5.57222,
+      "gps_status": "estimated",
+      "type": "winkels"
+    },
+    {
+      "id": "hema_doorn",
+      "naam": "🛍️ HEMA Doorn",
+      "html": "hema_doorn.html",
+      "latitude": 52.034203,
+      "longitude": 5.3458447,
+      "gps_status": "exact",
+      "type": "winkels"
+    },
+    {
+      "id": "hinderickx_en_winderickx",
+      "naam": "🛍️ Hinderickx en Winderickx",
+      "html": "hinderickx_en_winderickx.html",
+      "latitude": 52.0025516,
+      "longitude": 5.4604852,
+      "gps_status": "estimated",
+      "type": "winkels"
+    },
+    {
+      "id": "j_van_leijen_v_o_f",
+      "naam": "🛍️ J. van Leijen V.O.F.",
+      "html": "j_van_leijen_v_o_f.html",
+      "latitude": 51.960876,
+      "longitude": 5.57222,
+      "gps_status": "estimated",
+      "type": "winkels"
+    },
+    {
+      "id": "joli_cadeaux",
+      "naam": "🛍️ Joli Cadeaux",
+      "html": "joli_cadeaux.html",
+      "latitude": 52.063934795219,
+      "longitude": 5.3736213669012,
+      "gps_status": "estimated",
+      "type": "winkels"
+    },
+    {
+      "id": "jumbo_amerongen",
+      "naam": "🛍️ Jumbo Amerongen",
+      "html": "jumbo_amerongen.html",
+      "latitude": 52.004224808329,
+      "longitude": 5.4632483617914,
+      "gps_status": "estimated",
+      "type": "winkels"
+    },
+    {
+      "id": "jumbo_doorn",
+      "naam": "🛍️ Jumbo Doorn",
+      "html": "jumbo_doorn.html",
+      "latitude": 52.0344608,
+      "longitude": 5.3461118,
+      "gps_status": "exact",
+      "type": "winkels"
+    },
+    {
+      "id": "jumbo_rhenen",
+      "naam": "🛍️ Jumbo Rhenen",
+      "html": "jumbo_rhenen.html",
+      "latitude": 51.960876,
+      "longitude": 5.57222,
+      "gps_status": "estimated",
+      "type": "winkels"
+    },
+    {
+      "id": "lolly_atelier",
+      "naam": "🛍️ Lolly Atelier",
+      "html": "lolly_atelier.html",
+      "latitude": 52.061742,
+      "longitude": 5.383499,
+      "gps_status": "exact",
+      "type": "winkels"
+    },
+    {
+      "id": "maarnse_slagerij",
+      "naam": "🛍️ Maarnse Slagerij",
+      "html": "maarnse_slagerij.html",
+      "latitude": 52.0645,
+      "longitude": 5.3717,
+      "gps_status": "estimated",
+      "type": "winkels"
+    },
+    {
+      "id": "nete_s_creations",
+      "naam": "🛍️ Nete’s Creations",
+      "html": "nete_s_creations.html",
+      "latitude": 52.061742,
+      "longitude": 5.383499,
+      "gps_status": "exact",
+      "type": "winkels"
+    },
+    {
+      "id": "oude_slagershuis",
+      "naam": "🛍️ Oude Slagershuis",
+      "html": "oude_slagershuis.html",
+      "latitude": 52.0025516,
+      "longitude": 5.4604852,
+      "gps_status": "estimated",
+      "type": "winkels"
+    },
+    {
+      "id": "patisserie_van_woerekom",
+      "naam": "🛍️ Patisserie Van Woerekom",
+      "html": "patisserie_van_woerekom.html",
+      "latitude": 51.960876,
+      "longitude": 5.57222,
+      "gps_status": "estimated",
+      "type": "winkels"
+    },
+    {
+      "id": "plus_van_schaick",
+      "naam": "🛍️ PLUS Van Schaick",
+      "html": "plus_van_schaick.html",
+      "latitude": 52.06482,
+      "longitude": 5.37254,
+      "gps_status": "exact",
+      "type": "winkels"
+    },
+    {
+      "id": "slagerben_culinair",
+      "naam": "🛍️ SlagerBen Culinair",
+      "html": "slagerben_culinair.html",
+      "latitude": 52.03442499,
+      "longitude": 5.34508214,
+      "gps_status": "estimated",
+      "type": "winkels"
+    },
+    {
+      "id": "slagerij_hermsen",
+      "naam": "🛍️ Slagerij Hermsen",
+      "html": "slagerij_hermsen.html",
+      "latitude": 51.960876,
+      "longitude": 5.57222,
+      "gps_status": "estimated",
+      "type": "winkels"
+    },
+    {
+      "id": "slagerij_noordam",
+      "naam": "🛍️ Slagerij Noordam",
+      "html": "slagerij_noordam.html",
+      "latitude": 52.083845,
+      "longitude": 5.312365,
+      "gps_status": "estimated",
+      "type": "winkels"
+    },
+    {
+      "id": "slagerij_van_ginkel",
+      "naam": "🛍️ Slagerij Van Ginkel",
+      "html": "slagerij_van_ginkel.html",
+      "latitude": 52.0025516,
+      "longitude": 5.4604852,
+      "gps_status": "estimated",
+      "type": "winkels"
+    },
+    {
+      "id": "t_langbroekertje",
+      "naam": "🛍️ ’t Langbroekertje",
+      "html": "t_langbroekertje.html",
+      "latitude": 52.0113,
+      "longitude": 5.326,
+      "gps_status": "estimated",
+      "type": "winkels"
+    },
+    {
+      "id": "tess_gifts",
+      "naam": "🛍️ Tess’ Gifts",
+      "html": "tess_gifts.html",
+      "latitude": 52.037328661075,
+      "longitude": 5.342369358994,
+      "gps_status": "estimated",
+      "type": "winkels"
+    },
+    {
+      "id": "the_read_shop_doorn",
+      "naam": "🛍️ The Read Shop Doorn",
+      "html": "the_read_shop_doorn.html",
+      "latitude": 52.034485,
+      "longitude": 5.3449225,
+      "gps_status": "exact",
+      "type": "winkels"
+    },
+    {
+      "id": "transmedia",
+      "naam": "🛍️ Transmedia",
+      "html": "transmedia.html",
+      "latitude": 52.0025516,
+      "longitude": 5.4604852,
+      "gps_status": "estimated",
+      "type": "winkels"
+    },
+    {
+      "id": "van_der_woerd_de_echte_bakker",
+      "naam": "🛍️ Van der Woerd, De Echte Bakker",
+      "html": "van_der_woerd_de_echte_bakker.html",
+      "latitude": 52.0645,
+      "longitude": 5.3717,
+      "gps_status": "estimated",
+      "type": "winkels"
+    },
+    {
+      "id": "van_leeuwen_kaas_delicatessen",
+      "naam": "🛍️ Van Leeuwen Kaas &amp; Delicatessen",
+      "html": "van_leeuwen_kaas_delicatessen.html",
+      "latitude": 52.037328661075,
+      "longitude": 5.342369358994,
+      "gps_status": "estimated",
+      "type": "winkels"
+    },
+    {
+      "id": "van_os_limousinvlees",
+      "naam": "🛍️ Van Os limousinvlees",
+      "html": "van_os_limousinvlees.html",
+      "latitude": 52.032895285361,
+      "longitude": 5.326942043485,
+      "gps_status": "estimated",
+      "type": "winkels"
+    },
+    {
+      "id": "wim_aalbertsen_brood_banket_amerongen",
+      "naam": "🛍️ Wim Aalbertsen Brood &amp; Banket – Amerongen",
+      "html": "wim_aalbertsen_brood_banket_amerongen.html",
+      "latitude": 51.999745871214,
+      "longitude": 5.4540313766432,
+      "gps_status": "estimated",
+      "type": "winkels"
+    },
+    {
+      "id": "wim_aalbertsen_brood_banket_doorn",
+      "naam": "🛍️ Wim Aalbertsen Brood &amp; Banket – Doorn",
+      "html": "wim_aalbertsen_brood_banket_doorn.html",
+      "latitude": 52.035961202486,
+      "longitude": 5.344548664426,
+      "gps_status": "estimated",
+      "type": "winkels"
+    }
+  ]
+}
