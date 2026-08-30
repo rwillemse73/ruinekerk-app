@@ -1,0 +1,120 @@
+body{margin:0;font-family:system-ui,sans-serif;background:#f4f1ea;color:#26353a}
+header{background:#fff;padding:15px;border-bottom:1px solid #ddd;position:sticky;top:0;z-index:1000;position:relative}
+h1{margin:0;font-size:20px}.sub{font-size:12px;color:#6c777b}
+.version{position:absolute;right:14px;top:14px;font-size:11px;color:#6c777b;background:#eee;padding:5px 8px;border-radius:12px}
+#map{height:52vh;min-height:350px}.panel{padding:14px}
+button{padding:10px 13px;border:0;border-radius:10px;background:#26353a;color:#fff;margin:3px}
+.status{font-size:13px;margin:8px 3px}.card{background:#fff;border-radius:14px;padding:14px;margin:10px 0;border:1px solid #ddd}
+.card h2{margin:0 0 4px}.meta{font-size:12px;color:#6c777b}.story{font-size:14px;line-height:1.55;margin-top:8px}
+.error{background:#ffe2e2;padding:12px;border-radius:10px;margin:10px 0;font-size:13px}
+.content-meta{font-size:11px;color:#6c777b;background:#f0eee9;padding:8px;border-radius:9px;margin-top:8px}.extra-info{margin-top:12px;padding-top:10px;border-top:1px solid #eee}.extra-item{background:#f7f6f2;border-radius:9px;padding:9px;margin:7px 0;font-size:13px}.extra-date{font-size:11px;color:#6c777b;font-weight:600}.notes{margin-top:12px;padding-top:10px;border-top:1px solid #eee}.note{background:#f7f6f2;border-radius:9px;padding:8px;margin:7px 0;font-size:13px}.notehead{font-size:11px;color:#6c777b;font-weight:600}
+
+.photo-field img.location-add-preview{display:block;max-width:100%;width:auto;height:auto;max-height:300px;object-fit:contain;border-radius:10px;margin-top:8px}
+
+
+.location-photo-placeholder img.location-photo{
+  display:block;
+  max-width:100%;
+  width:auto;
+  height:auto;
+  max-height:300px;
+  object-fit:contain;
+}
+
+.trekvogel-category-marker{background:transparent!important;border:0!important}
+.trekvogel-category-marker span{
+ display:flex;align-items:center;justify-content:center;
+ width:34px;height:34px;border-radius:50%;
+ background:#fff;border:2px solid #5b4636;
+ box-shadow:0 2px 5px rgba(0,0,0,.28);
+ font-size:19px;line-height:1
+}
+.nav-btn{cursor:pointer;margin:4px;padding:7px 10px;border-radius:8px;border:1px solid #ccc;background:#fff}.nav-btn:hover{filter:brightness(.97)}
+.map-action{cursor:pointer;border:1px solid #c9c9c9;background:#fff;color:#26353a;border-radius:8px;padding:7px 10px;font-size:14px}.map-action:hover{filter:brightness(.97)}
+
+/* v6.1 — categorieën als aan/uit-filters */
+.user-functions{margin-bottom:14px}
+.user-buttons{display:flex;gap:8px;width:100%}
+.user-buttons button{flex:1 1 0;margin:0}
+.maintenance-functions{margin-top:16px;padding-top:12px;border-top:1px solid #ddd7cd}
+.maintenance-title,.test-title{font-size:13px;font-weight:700;color:#68777b;margin:0 0 8px}
+.test-title{margin-top:14px}
+.maintenance-buttons{display:flex;gap:8px;flex-wrap:wrap}
+.maintenance-buttons button{margin:0}
+.test-controls{display:flex;align-items:center;gap:8px;width:100%}
+.test-controls button{margin:0;flex:0 0 auto}
+.test-controls input{flex:1 1 auto}
+#testAddressStatus31{margin-top:8px}
+@media (max-width:600px){
+  .user-buttons{gap:5px}
+  .user-buttons button{font-size:13px;padding-left:7px;padding-right:7px}
+  .test-controls{flex-wrap:wrap}
+  .test-controls input{flex:1 1 180px}
+}
+
+/* Persistent Reisblik close control */
+#reisblikCloseLayer{
+  position:fixed !important;
+  top:8px !important;
+  right:10px !important;
+  z-index:2147483647 !important;
+  pointer-events:none !important;
+}
+#reisblikCloseBtn{
+  position:relative !important;
+  display:block !important;
+  width:36px !important;
+  height:36px !important;
+  padding:0 !important;
+  margin:0 !important;
+  border:0 !important;
+  border-radius:50% !important;
+  background:#26353a !important;
+  color:#fff !important;
+  font-family:Arial,sans-serif !important;
+  font-size:28px !important;
+  font-weight:400 !important;
+  line-height:36px !important;
+  text-align:center !important;
+  cursor:pointer !important;
+  box-shadow:0 2px 6px rgba(0,0,0,.25) !important;
+  pointer-events:auto !important;
+}
+#reisblikCloseBtn:hover{background:#1b272b !important}
+#reisblikCloseBtn:active{transform:scale(.96)}
+
+.version-inline{
+  font-size:12px !important;
+  font-weight:400 !important;
+  color:#6c777b !important;
+  margin-left:8px !important;
+  vertical-align:middle !important;
+  white-space:nowrap !important;
+}
+
+.rb6710-visited{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  margin:7px 0 8px;
+  padding:7px 10px;
+  border:1px solid #bbb;
+  border-radius:8px;
+  background:#fff;
+  font:inherit;
+  color:inherit;
+}
+.rb6710-visited input{width:18px;height:18px;margin:0}
+.rb6710-visited-date{font-size:.9em;color:#6c777b}
+/* Reisblik 7.0 – Bezocht */
+.reisblik-visited,.rb6710-visited{
+ display:inline-flex;align-items:center;gap:8px;margin:7px 0 8px;
+ padding:7px 10px;border:1px solid #bbb;border-radius:8px;
+ background:#fff;font:inherit;color:inherit;
+}
+.reisblik-visited input,.rb6710-visited input{width:18px;height:18px;margin:0}
+.reisblik-visited-date,.rb6710-visited-date{font-size:.9em;color:#6c777b}
+
+.reisblik-visited{display:inline-flex;align-items:center;gap:8px;margin:7px 0 8px;padding:7px 10px;border:1px solid #bbb;border-radius:8px;background:#fff;font:inherit;color:inherit}
+.reisblik-visited input{width:18px;height:18px;margin:0}
+.reisblik-visited-date{font-size:.9em;color:#6c777b}
