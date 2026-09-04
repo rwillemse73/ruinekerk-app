@@ -1,0 +1,22 @@
+{
+  "vakanties": [
+    {
+      "id": "trekvogelpad",
+      "naam": "Trekvogelpad",
+      "type": "vast",
+      "basePath": "trekvogelpad"
+    },
+    {
+      "id": "argentinie-chili",
+      "naam": "Argentinië & Chili",
+      "type": "vast",
+      "basePath": "argentinie-chili"
+    },
+    {
+      "id": "evenement-2026",
+      "naam": "Evenementen 2026",
+      "type": "vast",
+      "basePath": "evenement-2026"
+    }
+  ]
+}
