@@ -1,0 +1,22 @@
+{
+  "locations": [
+    {
+      "id": "arg-test-kunst-1",
+      "name": "Tijdelijke kunsttest – Puerto Madryn",
+      "lat": -42.769,
+      "lon": -65.0375,
+      "type": "Kunst – test",
+      "address": "Puerto Madryn, Argentinië",
+      "description": "Tijdelijke testvermelding voor de categorie Kunst."
+    },
+    {
+      "id": "arg-test-kunst-2",
+      "name": "Tijdelijke kunsttest – Esquel",
+      "lat": -42.912,
+      "lon": -71.3188,
+      "type": "Kunst – test",
+      "address": "Esquel, Argentinië",
+      "description": "Tijdelijke testvermelding voor de categorie Kunst."
+    }
+  ]
+}
