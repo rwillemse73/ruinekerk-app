@@ -1,0 +1,57 @@
+{
+  "version": "1.0",
+  "evenementen": [
+    {
+      "id": "test-2026-01",
+      "titel": "Test evenement Amsterdam",
+      "datum": "2026-01-17",
+      "tijd": "14:00",
+      "einddatum": "2026-01-17",
+      "eindtijd": "17:00",
+      "locatie": "Museumplein, Amsterdam",
+      "adres": "Museumplein, Amsterdam",
+      "latitude": 52.3579,
+      "longitude": 4.8811,
+      "beschrijving": "Testevenement voor het controleren van datum, tijd, locatie en kaartweergave."
+    },
+    {
+      "id": "test-2026-02",
+      "titel": "Test evenement Utrecht",
+      "datum": "2026-04-11",
+      "tijd": "10:30",
+      "einddatum": "2026-04-11",
+      "eindtijd": "16:00",
+      "locatie": "Domplein, Utrecht",
+      "adres": "Domplein, Utrecht",
+      "latitude": 52.0907,
+      "longitude": 5.1214,
+      "beschrijving": "Tweede testevenement voor het controleren van meerdere evenementen en verschillende locaties."
+    },
+    {
+      "id": "test-2026-03",
+      "titel": "Test evenement Den Haag",
+      "datum": "2026-07-25",
+      "tijd": "19:30",
+      "einddatum": "2026-07-25",
+      "eindtijd": "22:30",
+      "locatie": "Binnenhof, Den Haag",
+      "adres": "Binnenhof, Den Haag",
+      "latitude": 52.0803,
+      "longitude": 4.3136,
+      "beschrijving": "Testevenement in de avond om te controleren of tijdinformatie correct wordt verwerkt."
+    },
+    {
+      "id": "test-2026-04",
+      "titel": "Test evenement Alkmaar",
+      "datum": "2026-10-03",
+      "tijd": "12:00",
+      "einddatum": "2026-10-03",
+      "eindtijd": "15:00",
+      "locatie": "Waagplein, Alkmaar",
+      "adres": "Waagplein, Alkmaar",
+      "latitude": 52.6316,
+      "longitude": 4.7482,
+      "beschrijving": "Vierde testevenement om een evenement later in het jaar te testen."
+    }
+  ]
+}
