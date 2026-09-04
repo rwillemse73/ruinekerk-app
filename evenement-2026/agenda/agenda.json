@@ -1,0 +1,96 @@
+{
+  "formatVersion": "1.0",
+  "sourceFile": "agenda.json",
+  "createdAt": "2026-09-04",
+  "description": "Testdata voor Evenementen 2026",
+  "events": [
+    {
+      "id": "test-2026-01",
+      "name": "Test evenement Amsterdam",
+      "date": "2026-01-17",
+      "time": "14:00",
+      "endTime": "17:00",
+      "location": "Museumplein, Amsterdam",
+      "lat": 52.3579,
+      "lon": 4.8811,
+      "type": "Cultuur",
+      "organizer": "Testorganisatie",
+      "price": "Gratis",
+      "description": "Testevenement voor datum, tijd, locatie en kaartweergave.",
+      "source": "Testdata",
+      "eventUrl": "",
+      "sourceUrl": "",
+      "image": "",
+      "reisblikMatch": true,
+      "matchReasons": [
+        "Test van de agenda-import"
+      ]
+    },
+    {
+      "id": "test-2026-02",
+      "name": "Test evenement Utrecht",
+      "date": "2026-04-11",
+      "time": "10:30",
+      "endTime": "16:00",
+      "location": "Domplein, Utrecht",
+      "lat": 52.0907,
+      "lon": 5.1214,
+      "type": "Geschiedenis",
+      "organizer": "Testorganisatie",
+      "price": "€ 5",
+      "description": "Tweede testevenement voor meerdere evenementen en verschillende locaties.",
+      "source": "Testdata",
+      "eventUrl": "",
+      "sourceUrl": "",
+      "image": "",
+      "reisblikMatch": true,
+      "matchReasons": [
+        "Test van de agenda-import"
+      ]
+    },
+    {
+      "id": "test-2026-03",
+      "name": "Test evenement Den Haag",
+      "date": "2026-07-25",
+      "time": "19:30",
+      "endTime": "22:30",
+      "location": "Binnenhof, Den Haag",
+      "lat": 52.0803,
+      "lon": 4.3136,
+      "type": "Evenement",
+      "organizer": "Testorganisatie",
+      "price": "€ 10",
+      "description": "Avondevenement om ook tijdinformatie te testen.",
+      "source": "Testdata",
+      "eventUrl": "",
+      "sourceUrl": "",
+      "image": "",
+      "reisblikMatch": true,
+      "matchReasons": [
+        "Test van de agenda-import"
+      ]
+    },
+    {
+      "id": "test-2026-04",
+      "name": "Test evenement Alkmaar",
+      "date": "2026-10-03",
+      "time": "12:00",
+      "endTime": "15:00",
+      "location": "Waagplein, Alkmaar",
+      "lat": 52.6316,
+      "lon": 4.7482,
+      "type": "Cultuur",
+      "organizer": "Testorganisatie",
+      "price": "Gratis",
+      "description": "Vierde testevenement, later in het jaar.",
+      "source": "Testdata",
+      "eventUrl": "",
+      "sourceUrl": "",
+      "image": "",
+      "reisblikMatch": true,
+      "matchReasons": [
+        "Test van de agenda-import"
+      ]
+    }
+  ]
+}
