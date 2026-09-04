@@ -1,0 +1,48 @@
+{
+  "formatVersion": "1.0",
+  "sourceFile": "agenda.json",
+  "createdAt": "2026-09-04",
+  "description": "Tijdelijke testagenda Argentinië & Chili",
+  "events": [
+    {
+      "id": "test-argentinie-01",
+      "name": "Test evenement Argentinië 1",
+      "date": "2026-11-07",
+      "location": "Testpunt Argentinië A",
+      "lat": -42.769,
+      "lon": -65.038,
+      "type": "Test",
+      "organizer": "Reisblik test",
+      "price": "Gratis",
+      "description": "Tijdelijk testevenement voor de vakantiegebonden Agenda.",
+      "source": "Reisblik test",
+      "eventUrl": "",
+      "sourceUrl": "",
+      "image": "",
+      "reisblikMatch": 100,
+      "matchReasons": [
+        "test"
+      ]
+    },
+    {
+      "id": "test-argentinie-02",
+      "name": "Test evenement Argentinië 2",
+      "date": "2026-11-09",
+      "location": "Testpunt Argentinië B",
+      "lat": -42.91,
+      "lon": -71.32,
+      "type": "Test",
+      "organizer": "Reisblik test",
+      "price": "Gratis",
+      "description": "Tweede tijdelijk testevenement voor de vakantiegebonden Agenda.",
+      "source": "Reisblik test",
+      "eventUrl": "",
+      "sourceUrl": "",
+      "image": "",
+      "reisblikMatch": 100,
+      "matchReasons": [
+        "test"
+      ]
+    }
+  ]
+}
