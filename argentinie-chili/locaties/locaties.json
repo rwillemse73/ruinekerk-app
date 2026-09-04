@@ -1,0 +1,24 @@
+{
+  "locations": [
+    {
+      "id": "arg-test-puerto-madryn",
+      "name": "Puerto Madryn – tijdelijke testlocatie",
+      "lat": -42.7692,
+      "lon": -65.0385,
+      "type": "Testlocatie",
+      "address": "Puerto Madryn, Argentinië",
+      "description": "Tijdelijke testlocatie voor versie 9.0.2.",
+      "content": "locaties/puerto-madryn-test.html"
+    },
+    {
+      "id": "arg-test-esquel",
+      "name": "Esquel – tijdelijke testlocatie",
+      "lat": -42.9115,
+      "lon": -71.3195,
+      "type": "Testlocatie",
+      "address": "Esquel, Argentinië",
+      "description": "Tijdelijke testlocatie voor versie 9.0.2.",
+      "content": "locaties/esquel-test.html"
+    }
+  ]
+}
