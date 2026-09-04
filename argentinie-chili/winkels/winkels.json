@@ -1,0 +1,22 @@
+{
+  "locations": [
+    {
+      "id": "arg-test-winkel-1",
+      "name": "Tijdelijke winkeltest – Puerto Madryn",
+      "lat": -42.7687,
+      "lon": -65.039,
+      "type": "Winkel – test",
+      "address": "Puerto Madryn, Argentinië",
+      "description": "Tijdelijke testvermelding voor de categorie Winkels."
+    },
+    {
+      "id": "arg-test-winkel-2",
+      "name": "Tijdelijke winkeltest – Esquel",
+      "lat": -42.911,
+      "lon": -71.32,
+      "type": "Winkel – test",
+      "address": "Esquel, Argentinië",
+      "description": "Tijdelijke testvermelding voor de categorie Winkels."
+    }
+  ]
+}
