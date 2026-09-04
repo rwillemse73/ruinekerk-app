@@ -1,0 +1,46 @@
+{
+  "basis": "6.7.11",
+  "doel": "7.0",
+  "syntax": {
+    "app.js": true,
+    "visited.js": true,
+    "navigation.js": true,
+    "extra-info.js": true,
+    "ui.js": true
+  },
+  "inline_onclick_gecontroleerd": [
+    "closeAddLocation",
+    "closeExtraInfo",
+    "closeNote",
+    "closeSimpleExtra",
+    "exportLocalLocationsTxt",
+    "findAddress",
+    "loadNewLocalHtmlLocationsManual",
+    "myPosition",
+    "openAddLocation",
+    "saveExtraInfo",
+    "saveNewLocation",
+    "saveNote",
+    "saveSimpleExtra",
+    "searchTestAddress31",
+    "showAll",
+    "testPosition",
+    "useCurrentLocation"
+  ],
+  "ontbrekend": [],
+  "module_volgorde": [
+    "js/visited.js",
+    "js/navigation.js",
+    "js/extra-info.js",
+    "js/app.js",
+    "js/ui.js"
+  ],
+  "functies": {
+    "app.js": 54,
+    "visited.js": 6,
+    "navigation.js": 2,
+    "extra-info.js": 20,
+    "ui.js": 6
+  },
+  "bewuste_keuze": "app.js bevat de onderling sterk afhankelijke kern; alleen duidelijke functionele grenzen zijn extern gemaakt."
+}
