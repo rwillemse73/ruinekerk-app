@@ -1,0 +1,7 @@
+{
+  "formatVersion": "1.0",
+  "sourceFile": "agenda.json",
+  "createdAt": "",
+  "description": "Reisblik importbestand voor nieuwe evenementen. Vervang de inhoud met een nieuwe JSON-agenda. De lijst wordt alleen geladen wanneer je in Reisblik op 'Importeer nieuwe evenementen' klikt.",
+  "events": []
+}
