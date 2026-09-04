@@ -1,0 +1,78 @@
+<!doctype html><html lang="nl"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>’t Kalkoentje – Trekvogelpad</title>
+<style>@page{size:A4;margin:14mm}body{font-family:Arial,sans-serif;color:#292929;font-size:12.5pt;line-height:1.35;margin:0}
+main{max-width:180mm;margin:auto}h1{font-size:24pt;color:#5b4636;margin:0 0 2mm}
+h2{font-size:13pt;color:#5b4636;margin:6mm 0 2mm;border-bottom:1px solid #ccc;padding-bottom:1mm}
+table{width:100%;border-collapse:collapse}td{padding:3mm 2mm;border-bottom:1px solid #ddd;vertical-align:top}td:first-child{width:28%;font-weight:bold}a{color:#5b4636}</style>
+</head><body><main><h1>’t Kalkoentje</h1><p><strong>Restaurant</strong> · Rhenen</p>
+<h2>Over de zaak</h2><p>Restaurant in Rhenen.</p>
+<h2>Google-beoordeling</h2><p><strong>4,7 / 5</strong> · 406 Google-reviews</p>
+<h2>Gegevens</h2><table><tr><td>Adres</td><td>Utrechtsestraatweg 143, 3911 TS Rhenen</td></tr><tr><td>Openingstijden</td><td>diner 18:00–20:30</td></tr>
+<tr><td>Officiële website</td><td><a href="https://www.kalkoentje.nl/" target="_blank" rel="noopener">Officiële website</a></td></tr></table><div id="location-data" hidden data-location-id="t-kalkoentje" data-location-type="horeca" data-address="Utrechtsestraatweg 143, 3911 TS Rhenen" data-lat="51.9512" data-lon="5.59" data-gps-status="address-verified"></div></main>
+<style id="reisblik-visited-style">
+.reisblik-bezocht{
+  display:inline-flex;align-items:center;gap:6px;
+  margin:8px 0 16px;padding:9px 13px;
+  border:1px solid #b9c0c3;border-radius:9px;
+  background:#fff;color:#26353a;font:inherit;cursor:pointer;
+}
+.reisblik-bezocht:hover{filter:brightness(.97)}
+</style>
+<script>
+(function(){
+  const KEY='reisblik_visited_v1';
+  const dataEl=document.getElementById('location-data');
+  if(!dataEl)return;
+  const id=dataEl.dataset.locationId;
+  if(!id)return;
+  const main=document.querySelector('main');
+  if(!main)return;
+
+  function load(){
+    try{return JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){return {}}
+  }
+  function save(d){localStorage.setItem(KEY,JSON.stringify(d))}
+  function fmt(iso){
+    return new Intl.DateTimeFormat('nl-NL',{dateStyle:'short',timeStyle:'short'}).format(new Date(iso));
+  }
+  const name=(main.querySelector('h1')?.textContent||id).trim();
+  const type=(dataEl.dataset.locationType||'').trim();
+
+  const b=document.createElement('button');
+  b.type='button';
+  b.className='reisblik-bezocht';
+
+  function refresh(){
+    const d=load(), v=d[id];
+    b.textContent=v ? '☑ Bezocht — '+fmt(v.visitedAt) : '☐ Bezocht';
+    b.setAttribute('aria-pressed',v?'true':'false');
+  }
+  b.addEventListener('click',function(){
+    const d=load();
+    if(d[id]){
+      delete d[id];
+    }else{
+      d[id]={
+        id:id,
+        name:name,
+        category:type,
+        visitedAt:new Date().toISOString()
+      };
+    }
+    save(d);
+    refresh();
+  });
+
+  // Plaats de knop direct onder de eerste inleidende alinea na de titel.
+  const h1=main.querySelector('h1');
+  let intro=h1 ? h1.nextElementSibling : null;
+  while(intro && intro.tagName!=='P') intro=intro.nextElementSibling;
+  if(intro) intro.insertAdjacentElement('afterend',b);
+  else if(h1) h1.insertAdjacentElement('afterend',b);
+  else main.insertBefore(b,main.firstChild);
+
+  refresh();
+})();
+</script>
+
+</body></html>
