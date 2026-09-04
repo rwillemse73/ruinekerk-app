@@ -1,0 +1,14 @@
+{
+  "vakanties": [
+    {
+      "id": "trekvogelpad",
+      "naam": "Trekvogelpad",
+      "type": "vast"
+    },
+    {
+      "id": "argentinie-chili",
+      "naam": "Argentinië & Chili",
+      "type": "vast"
+    }
+  ]
+}
