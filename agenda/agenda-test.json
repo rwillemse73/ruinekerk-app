@@ -1,0 +1,178 @@
+{
+  "version": "1.0",
+  "generatedFor": "Reisblik testimport",
+  "events": [
+    {
+      "id": "test-floralia-nieuwe-niedorp-2026",
+      "name": "Floralia Nieuwe Niedorp",
+      "date": "2026-09-19/2026-09-20",
+      "location": "Nieuwe Niedorp, Noord-Holland",
+      "lat": 52.7393,
+      "lon": 4.8985,
+      "type": "Lokaal festival / bloemen / creativiteit",
+      "organizer": "Lokale organisatie Floralia Nieuwe Niedorp",
+      "price": "",
+      "description": "Lokaal evenement met bloemen, creativiteit, gezelligheid en het thema Feest & Muziek. Sterke match met lokaal, authentiek en sociale ervaring.",
+      "source": "Gemeente Hollands Kroon",
+      "url": "https://www.hollandskroon.nl/actueel/herfstkriebels-in-hollands-kroon-dit-is-er-te-doen-in-september-2026/",
+      "reisblikMatch": 92,
+      "matchReasons": [
+        "lokaal en authentiek",
+        "creativiteit",
+        "sociale ervaring",
+        "kleinschaliger karakter",
+        "onverwachte/knutterige lokale sfeer"
+      ]
+    },
+    {
+      "id": "test-delirium-oogst-2026",
+      "name": "DELIRIUM – OOGST Festival",
+      "date": "2026-09-19/2026-09-20",
+      "location": "Hollands Kroon, Noord-Holland",
+      "lat": 52.8,
+      "lon": 4.87,
+      "type": "Theater / festival",
+      "organizer": "OOGST Festival",
+      "price": "",
+      "description": "Theatrale voorstelling binnen het OOGST Festival, met een lokaal festivalachtig karakter en aandacht voor verhaal en makers.",
+      "source": "Gemeente Hollands Kroon",
+      "url": "https://www.hollandskroon.nl/actueel/herfstkriebels-in-hollands-kroon-dit-is-er-te-doen-in-september-2026/",
+      "reisblikMatch": 88,
+      "matchReasons": [
+        "verhaal en makers",
+        "lokaal festival",
+        "culturele ervaring",
+        "bijzonder karakter"
+      ]
+    },
+    {
+      "id": "test-top-in-de-kop-2026",
+      "name": "Top in de Kop – tuinenroute",
+      "date": "2026-09-12/2026-09-13",
+      "location": "Diverse locaties in de Kop van Noord-Holland",
+      "lat": 52.79,
+      "lon": 4.86,
+      "type": "Tuinenroute / kunst / natuur",
+      "organizer": "Top in de Kop",
+      "price": "",
+      "description": "Route langs 26 locaties met tuinen, kunst en een natuurvriendelijke kwekerij. Past goed bij zelfstandig rondkijken, natuur en bijzondere plekken.",
+      "source": "Visit Kop van Holland",
+      "url": "https://visitkopvanholland.nl/agenda/pagina/3/",
+      "reisblikMatch": 94,
+      "matchReasons": [
+        "26 bijzondere locaties",
+        "kunst + natuur",
+        "zelf rondkijken",
+        "lokaal initiatief",
+        "onverwachte plekken"
+      ]
+    },
+    {
+      "id": "test-de-nollen-2026",
+      "name": "Kunst- en Natuurproject De Nollen – Open Monumentendagen",
+      "date": "2026-09-12/2026-09-13",
+      "location": "De Nollen, Den Helder",
+      "lat": 52.935,
+      "lon": 4.752,
+      "type": "Kunst / natuur / erfgoed",
+      "organizer": "Kunstproject De Nollen",
+      "price": "",
+      "description": "Open Monumentendagen bij Kunst- en Natuurproject De Nollen. Een combinatie van kunst, landschap en een bijzondere locatie.",
+      "source": "Visit Kop van Holland",
+      "url": "https://visitkopvanholland.nl/agenda/pagina/3/",
+      "reisblikMatch": 96,
+      "matchReasons": [
+        "kunst en natuur",
+        "bijzondere locatie",
+        "erfgoed",
+        "zelf ontdekken",
+        "sterke belevingswaarde"
+      ]
+    },
+    {
+      "id": "test-bergen-aan-zee-cultuurwandeling-2026",
+      "name": "Natuur- en cultuurwandeling Bergen aan Zee",
+      "date": "2026-10-03",
+      "location": "Bergen aan Zee, Noord-Holland",
+      "lat": 52.6577,
+      "lon": 4.627,
+      "type": "Wandeling / natuur / cultuur",
+      "organizer": "IVN Noord-Kennemerland",
+      "price": "",
+      "description": "Gidswandeling waarin natuur en cultuur van Bergen aan Zee samenkomen. Past bij wandelen, verhaal/uitleg en buiten beleven.",
+      "source": "IVN Noord-Kennemerland",
+      "url": "https://www.ivn.nl/afdeling/noord-kennemerland/natuuractiviteiten/",
+      "reisblikMatch": 95,
+      "matchReasons": [
+        "wandelen",
+        "natuur + cultuur",
+        "gids en uitleg",
+        "bijzondere omgeving"
+      ]
+    },
+    {
+      "id": "test-herfst-paddenstoelendag-2026",
+      "name": "Herfst-/Paddenstoelendag",
+      "date": "2026-10-11",
+      "location": "Bergen, Noord-Holland",
+      "lat": 52.669,
+      "lon": 4.704,
+      "type": "Natuur / excursie",
+      "organizer": "IVN Noord-Kennemerland",
+      "price": "",
+      "description": "Natuuractiviteit rond paddenstoelen in de herfst. Interessant als inhoudelijke buitenactiviteit met uitleg en natuurbeleving.",
+      "source": "IVN Noord-Kennemerland",
+      "url": "https://www.ivn.nl/afdeling/noord-kennemerland/natuuractiviteiten/",
+      "reisblikMatch": 90,
+      "matchReasons": [
+        "natuurbeleving",
+        "wandelen/buiten",
+        "uitleg",
+        "kleinschaliger activiteit"
+      ]
+    },
+    {
+      "id": "test-geestmerambacht-2026",
+      "name": "Wandelingen Geestmerambacht",
+      "date": "2026-10-18",
+      "location": "Geestmerambacht, Koedijk, Noord-Holland",
+      "lat": 52.675,
+      "lon": 4.755,
+      "type": "Wandeling / natuur",
+      "organizer": "IVN Noord-Kennemerland",
+      "price": "",
+      "description": "Gidswandeling in het landschap van Geestmerambacht. Past bij wandelen, natuur en zelfstandig ontdekken van een omgeving.",
+      "source": "IVN Noord-Kennemerland",
+      "url": "https://www.ivn.nl/afdeling/noord-kennemerland/natuuractiviteiten/",
+      "reisblikMatch": 89,
+      "matchReasons": [
+        "wandelen",
+        "natuur",
+        "gids",
+        "landschap beleven"
+      ]
+    },
+    {
+      "id": "test-dwaalland-2026",
+      "name": "DWAALLAND – Jacqueline Kooter & Tara Kuijpers Wentink",
+      "date": "2026-09-03/2026-10-18",
+      "location": "Kunstuitleen Alkmaar, Alkmaar",
+      "lat": 52.631,
+      "lon": 4.753,
+      "type": "Tentoonstelling / installatiekunst",
+      "organizer": "Jacqueline Kooter & Tara Kuijpers Wentink",
+      "price": "",
+      "description": "Totaalinstallatie van papier, keramiek, textiel en tekeningen waarin bezoekers kunnen dwalen door een organische, vervreemdende wereld vol details.",
+      "source": "Visit Hart van Noord-Holland",
+      "url": "https://www.ontdekhartvannoordholland.nl/uitagenda",
+      "reisblikMatch": 93,
+      "matchReasons": [
+        "makers zichtbaar",
+        "bijzondere beleving",
+        "zelf rondkijken",
+        "onverwachte elementen",
+        "kunst en verhaal"
+      ]
+    }
+  ]
+}
