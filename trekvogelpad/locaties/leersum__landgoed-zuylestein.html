@@ -1,0 +1,78 @@
+<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Landgoed Zuylestein – Trekvogelpad</title>
+<style>@page{size:A4;margin:14mm}body{margin:0;color:#292724;font-family:Calibri,"Segoe UI",Arial,sans-serif;font-size:12pt;line-height:1.55}main{max-width:180mm;margin:auto}header{border-bottom:2px solid #5b4636;padding-bottom:5mm;margin-bottom:7mm}.eyebrow{text-transform:uppercase;letter-spacing:.1em;font-weight:700;color:#766b61;font-size:9pt}h1{font-size:30pt;line-height:1.05;color:#5b4636;margin:3mm 0}h2{font-size:18pt;color:#5b4636;margin:8mm 0 3mm}.intro{font-size:14pt}table{width:100%;border-collapse:collapse}th,td{padding:2.5mm;border-bottom:1px solid #ddd6ce;text-align:left;vertical-align:top}th{width:34%;font-size:10pt}.story p{margin:0 0 4mm}.didyou{padding:4mm 5mm;border:1px solid #c8bfb4;margin-top:5mm}.person{padding:4mm 5mm;background:#f3f0eb}.practical{padding:4mm 5mm;background:#f7f5f2}a{color:#5b4636}.small{font-size:9pt;color:#777}</style></head><body><main>
+<header><div class="eyebrow">Leersum · landgoed; cultuurhistorie</div><h1>Landgoed Zuylestein</h1><p class="intro">Zuylestein heeft een dramatisch twintigste-eeuws verhaal. Het eeuwenoude kasteel werd in 1945 tijdens een tweedaags bombardement door geallieerde vliegtuigen vrijwel volledig verwoest. De reden blijft onderwerp van historisch onderzoek: was het werkelijk een SS-hoofdkwartier en welke informatie had het geallieerde opperbevel? Van het kasteel bleven uiteindelijk slechts fundamenten en een achttiende-eeuws poortgebouw over. </p></header>
+<h2>📍 In één oogopslag</h2><table><tr><th>Etappe</th><td>13</td></tr><tr><th>Type</th><td>landgoed; cultuurhistorie</td></tr><tr><th>Persoon</th><td>Frederik Hendrik van Oranje-Nassau</td></tr></table>
+<h2>🎤 Het verhaal</h2><div class="story"><p>Zuylestein heeft een dramatisch twintigste-eeuws verhaal. Het eeuwenoude kasteel werd in 1945 tijdens een tweedaags bombardement door geallieerde vliegtuigen vrijwel volledig verwoest. De reden blijft onderwerp van historisch onderzoek: was het werkelijk een SS-hoofdkwartier en welke informatie had het geallieerde opperbevel? Van het kasteel bleven uiteindelijk slechts fundamenten en een achttiende-eeuws poortgebouw over.</p><p>Een ouder verhaal voert terug naar Frederik Hendrik. Nadat hij Zuylestein in 1630 verwierf, liet hij het kasteel grondig verbouwen en maakte hij er een jachtslot van. In 1640 schonk hij het aan zijn bastaardzoon Frederik, die zich daarna Frederik van Nassau-Zuylestein noemde. Zo raakte het landgoed rechtstreeks verbonden met de Oranje-dynastie.</p></div>
+<div class="didyou"><strong>💡 Wist je dat?</strong><br>Geen afzonderlijk feit toegevoegd zonder betrouwbare onderbouwing.</div>
+<h2>👤 Persoon uit het verhaal</h2><div class="person"><strong>Frederik Hendrik van Oranje-Nassau</strong><br>Aan deze locatie gekoppelde persoon uit de masterdata.</div>
+<h2>Wat zie je hier?</h2><ul><li>buitenplaats</li><li>moestuin</li><li>inrijhek</li></ul>
+<h2>📍 Praktische informatie</h2><div class="practical"><strong>Route</strong><br>Etappe 13 · direct aan de route<br><br><strong>Openingstijden / toegankelijkheid</strong><br>Alleen opnemen wanneer actueel en betrouwbaar onderbouwd.</div>
+<h2>🔗 Bronnen</h2><ul><li>Nivon Trekvogelpad actuele etappepagina/routebeschrijving</li><li>https://trekvogelpad.nivon.nl/route/etappe-13/</li></ul>
+<p class="small">GPS-coördinaten zijn bewust niet zichtbaar op deze pagina; ze blijven beschikbaar in de achterliggende masterdata/app.</p><div id="location-data" hidden data-location-id="leersum-landgoed-zuylestein" data-location-type="locaties" data-lat="52.0016500" data-lon="5.4417200" data-gps-status="exact_web"></div></main>
+<style id="reisblik-visited-style">
+.reisblik-bezocht{
+  display:inline-flex;align-items:center;gap:6px;
+  margin:8px 0 16px;padding:9px 13px;
+  border:1px solid #b9c0c3;border-radius:9px;
+  background:#fff;color:#26353a;font:inherit;cursor:pointer;
+}
+.reisblik-bezocht:hover{filter:brightness(.97)}
+</style>
+<script>
+(function(){
+  const KEY='reisblik_visited_v1';
+  const dataEl=document.getElementById('location-data');
+  if(!dataEl)return;
+  const id=dataEl.dataset.locationId;
+  if(!id)return;
+  const main=document.querySelector('main');
+  if(!main)return;
+
+  function load(){
+    try{return JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){return {}}
+  }
+  function save(d){localStorage.setItem(KEY,JSON.stringify(d))}
+  function fmt(iso){
+    return new Intl.DateTimeFormat('nl-NL',{dateStyle:'short',timeStyle:'short'}).format(new Date(iso));
+  }
+  const name=(main.querySelector('h1')?.textContent||id).trim();
+  const type=(dataEl.dataset.locationType||'').trim();
+
+  const b=document.createElement('button');
+  b.type='button';
+  b.className='reisblik-bezocht';
+
+  function refresh(){
+    const d=load(), v=d[id];
+    b.textContent=v ? '☑ Bezocht — '+fmt(v.visitedAt) : '☐ Bezocht';
+    b.setAttribute('aria-pressed',v?'true':'false');
+  }
+  b.addEventListener('click',function(){
+    const d=load();
+    if(d[id]){
+      delete d[id];
+    }else{
+      d[id]={
+        id:id,
+        name:name,
+        category:type,
+        visitedAt:new Date().toISOString()
+      };
+    }
+    save(d);
+    refresh();
+  });
+
+  // Plaats de knop direct onder de eerste inleidende alinea na de titel.
+  const h1=main.querySelector('h1');
+  let intro=h1 ? h1.nextElementSibling : null;
+  while(intro && intro.tagName!=='P') intro=intro.nextElementSibling;
+  if(intro) intro.insertAdjacentElement('afterend',b);
+  else if(h1) h1.insertAdjacentElement('afterend',b);
+  else main.insertBefore(b,main.firstChild);
+
+  refresh();
+})();
+</script>
+
+</body></html>
