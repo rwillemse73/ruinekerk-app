@@ -1,0 +1,48 @@
+{
+  "formatVersion": "1.0",
+  "sourceFile": "agenda.json",
+  "createdAt": "2026-09-04",
+  "description": "Tijdelijke testagenda Trekvogelpad",
+  "events": [
+    {
+      "id": "test-trekvogelpad-01",
+      "name": "Test evenement Trekvogelpad 1",
+      "date": "2026-09-12",
+      "location": "Testpunt Trekvogelpad A",
+      "lat": 52.735,
+      "lon": 4.9,
+      "type": "Test",
+      "organizer": "Reisblik test",
+      "price": "Gratis",
+      "description": "Tijdelijk testevenement voor de vakantiegebonden Agenda.",
+      "source": "Reisblik test",
+      "eventUrl": "",
+      "sourceUrl": "",
+      "image": "",
+      "reisblikMatch": 100,
+      "matchReasons": [
+        "test"
+      ]
+    },
+    {
+      "id": "test-trekvogelpad-02",
+      "name": "Test evenement Trekvogelpad 2",
+      "date": "2026-09-13",
+      "location": "Testpunt Trekvogelpad B",
+      "lat": 52.81,
+      "lon": 5.05,
+      "type": "Test",
+      "organizer": "Reisblik test",
+      "price": "Gratis",
+      "description": "Tweede tijdelijk testevenement voor de vakantiegebonden Agenda.",
+      "source": "Reisblik test",
+      "eventUrl": "",
+      "sourceUrl": "",
+      "image": "",
+      "reisblikMatch": 100,
+      "matchReasons": [
+        "test"
+      ]
+    }
+  ]
+}
