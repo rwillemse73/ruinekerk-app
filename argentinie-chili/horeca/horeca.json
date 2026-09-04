@@ -1,0 +1,22 @@
+{
+  "locations": [
+    {
+      "id": "arg-test-horeca-1",
+      "name": "Tijdelijke horecatest – Puerto Madryn",
+      "lat": -42.7689,
+      "lon": -65.0382,
+      "type": "Horeca – test",
+      "address": "Puerto Madryn, Argentinië",
+      "description": "Tijdelijke testvermelding voor de categorie Horeca."
+    },
+    {
+      "id": "arg-test-horeca-2",
+      "name": "Tijdelijke horecatest – Esquel",
+      "lat": -42.9118,
+      "lon": -71.319,
+      "type": "Horeca – test",
+      "address": "Esquel, Argentinië",
+      "description": "Tijdelijke testvermelding voor de categorie Horeca."
+    }
+  ]
+}
