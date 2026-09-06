@@ -1,0 +1,506 @@
+{
+  "version": "1.1",
+  "categorie": "locaties",
+  "gps_source": "uit masterdata/TXT; exacte of geschatte status wordt behouden",
+  "sourceFile": "Praag_hoofdlocaties_definitief_v3.txt",
+  "createdAt": "2026-09-06T08:00:14.795Z",
+  "locations": [
+    {
+      "id": "praha-01-praagse-burcht",
+      "naam": "Praagse Burcht",
+      "type": "hoofdlocatie",
+      "html": "praha-01-praagse-burcht.html",
+      "latitude": 50.09,
+      "longitude": 14.4,
+      "gps_status": "Wikidata/NPÚ",
+      "sublocations": [
+        {
+          "id": "praha-01-st-vituskathedraal",
+          "naam": "Sint-Vituskathedraal",
+          "type": "sublocatie",
+          "latitude": 50.09091,
+          "longitude": 14.40051,
+          "gps_status": "Wikidata/official site"
+        },
+        {
+          "id": "praha-01-oude-koninklijke-paleis",
+          "naam": "Oude Koninklijke Paleis",
+          "type": "sublocatie",
+          "latitude": 50.090631,
+          "longitude": 14.401739,
+          "gps_status": "Wikidata"
+        },
+        {
+          "id": "praha-01-sint-jorisbasiliek",
+          "naam": "Sint-Jorisbasiliek",
+          "type": "sublocatie",
+          "latitude": 50.09113,
+          "longitude": 14.40314,
+          "gps_status": "Wikidata/NPÚ"
+        },
+        {
+          "id": "praha-01-gouden-straatje",
+          "naam": "Gouden Straatje & Daliborka",
+          "type": "sublocatie",
+          "latitude": 50.092057,
+          "longitude": 14.40427,
+          "gps_status": "Wikidata/Mapy.com"
+        },
+        {
+          "id": "praha-01-koninklijke-tuinen",
+          "naam": "Koninklijke Tuinen",
+          "type": "sublocatie",
+          "latitude": 50.09,
+          "longitude": 14.4,
+          "gps_status": "Wikidata/Mapy.com"
+        },
+        {
+          "id": "praha-01-lobkowiczpaleis",
+          "naam": "Lobkowiczpaleis",
+          "type": "sublocatie",
+          "latitude": 50.09155,
+          "longitude": 14.40487,
+          "gps_status": "Wikidata/Mapcarta"
+        }
+      ]
+    },
+    {
+      "id": "praha-02-hradcanske-namesti",
+      "naam": "Hradčanské náměstí",
+      "type": "hoofdlocatie",
+      "html": "praha-02-hradcanske-namesti.html",
+      "latitude": 50.09,
+      "longitude": 14.4,
+      "gps_status": "Wikidata",
+      "sublocations": [
+        {
+          "id": "praha-02-loreto",
+          "naam": "Loreto",
+          "type": "sublocatie",
+          "latitude": 50.0887,
+          "longitude": 14.3982,
+          "gps_status": "kaart/Wikidata"
+        },
+        {
+          "id": "praha-02-schwarzenbergpaleis",
+          "naam": "Schwarzenbergpaleis",
+          "type": "sublocatie",
+          "latitude": 50.088889,
+          "longitude": 14.397,
+          "gps_status": "Wikidata/NPÚ"
+        },
+        {
+          "id": "praha-02-novy-svet",
+          "naam": "Nový Svět",
+          "type": "sublocatie",
+          "latitude": 50.09123,
+          "longitude": 14.38964,
+          "gps_status": "Wikidata/CÚZK"
+        },
+        {
+          "id": "praha-02-strahovklooster",
+          "naam": "Strahovklooster",
+          "type": "sublocatie",
+          "latitude": 50.086,
+          "longitude": 14.389282,
+          "gps_status": "NPÚ/Wikidata"
+        }
+      ]
+    },
+    {
+      "id": "praha-03-mala-strana",
+      "naam": "Malá Strana",
+      "type": "hoofdlocatie",
+      "html": "praha-03-mala-strana.html",
+      "latitude": 50.0877,
+      "longitude": 14.405,
+      "gps_status": "gebiedsanker/kaart",
+      "sublocations": [
+        {
+          "id": "praha-03-sint-nicolaaskerk",
+          "naam": "Sint-Nicolaaskerk",
+          "type": "sublocatie",
+          "latitude": 50.087954,
+          "longitude": 14.39944,
+          "gps_status": "official church"
+        },
+        {
+          "id": "praha-03-nerudova",
+          "naam": "Nerudova",
+          "type": "sublocatie",
+          "latitude": 50.0889,
+          "longitude": 14.4039,
+          "gps_status": "kaart/Wikidata"
+        },
+        {
+          "id": "praha-03-wallensteinpaleis",
+          "naam": "Wallensteinpaleis",
+          "type": "sublocatie",
+          "latitude": 50.09,
+          "longitude": 14.406667,
+          "gps_status": "Wikidata"
+        },
+        {
+          "id": "praha-03-wallensteintuin",
+          "naam": "Wallensteintuin",
+          "type": "sublocatie",
+          "latitude": 50.0899,
+          "longitude": 14.4069,
+          "gps_status": "kaart/Wikidata"
+        },
+        {
+          "id": "praha-03-ol-victorious",
+          "naam": "Kerk Onze-Lieve-Vrouw van de Overwinning",
+          "type": "sublocatie",
+          "latitude": 50.085694,
+          "longitude": 14.403472,
+          "gps_status": "Mapcarta/Wikidata"
+        }
+      ]
+    },
+    {
+      "id": "praha-04-kampa",
+      "naam": "Kampa & Moldau-oever",
+      "type": "hoofdlocatie",
+      "html": "praha-04-kampa.html",
+      "latitude": 50.0849,
+      "longitude": 14.4078,
+      "gps_status": "kaart",
+      "sublocations": [
+        {
+          "id": "praha-04-kampa-museum",
+          "naam": "Kampa Museum",
+          "type": "sublocatie",
+          "latitude": 50.084,
+          "longitude": 14.408491,
+          "gps_status": "Wikidata"
+        },
+        {
+          "id": "praha-04-lennon-wall",
+          "naam": "Lennon Wall",
+          "type": "sublocatie",
+          "latitude": 50.0862,
+          "longitude": 14.4079,
+          "gps_status": "kaart"
+        }
+      ]
+    },
+    {
+      "id": "praha-05-karelsbrug",
+      "naam": "Karelsbrug",
+      "type": "hoofdlocatie",
+      "html": "praha-05-karelsbrug.html",
+      "latitude": 50.086409,
+      "longitude": 14.411935,
+      "gps_status": "Oldtown-prague.com",
+      "sublocations": [
+        {
+          "id": "praha-05-oude-brugtoren",
+          "naam": "Oude Brugtoren",
+          "type": "sublocatie",
+          "latitude": 50.08616,
+          "longitude": 14.41361,
+          "gps_status": "Mapcarta/Wikidata"
+        },
+        {
+          "id": "praha-05-kleine-zijdebrugtorens",
+          "naam": "Kleine-Zijdebrugtorens",
+          "type": "sublocatie",
+          "latitude": 50.08731,
+          "longitude": 14.40685,
+          "gps_status": "Mapcarta"
+        },
+        {
+          "id": "praha-05-krizovnicke-namesti",
+          "naam": "Křižovnické náměstí",
+          "type": "sublocatie",
+          "latitude": 50.086,
+          "longitude": 14.4139,
+          "gps_status": "kaart"
+        }
+      ]
+    },
+    {
+      "id": "praha-06-oude-stadsplein",
+      "naam": "Oude Stadsplein",
+      "type": "hoofdlocatie",
+      "html": "praha-06-oude-stadsplein.html",
+      "latitude": 50.087558,
+      "longitude": 14.420896,
+      "gps_status": "Oldtown-prague.com",
+      "sublocations": [
+        {
+          "id": "praha-06-oude-stadhuis",
+          "naam": "Oude Stadhuis & Astronomische klok",
+          "type": "sublocatie",
+          "latitude": 50.087108,
+          "longitude": 14.420672,
+          "gps_status": "Wikidata"
+        },
+        {
+          "id": "praha-06-tynkerk",
+          "naam": "Týnkerk",
+          "type": "sublocatie",
+          "latitude": 50.087711,
+          "longitude": 14.421226,
+          "gps_status": "Wikidata"
+        },
+        {
+          "id": "praha-06-ungelt",
+          "naam": "Ungelt",
+          "type": "sublocatie",
+          "latitude": 50.0878,
+          "longitude": 14.423,
+          "gps_status": "kaart"
+        },
+        {
+          "id": "praha-06-celetna",
+          "naam": "Celetná",
+          "type": "sublocatie",
+          "latitude": 50.087,
+          "longitude": 14.425,
+          "gps_status": "kaart"
+        }
+      ]
+    },
+    {
+      "id": "praha-07-klementinum",
+      "naam": "Klementinum",
+      "type": "hoofdlocatie",
+      "html": "praha-07-klementinum.html",
+      "latitude": 50.086605,
+      "longitude": 14.415672,
+      "gps_status": "Oldtown-prague.com",
+      "sublocations": [
+        {
+          "id": "praha-07-bethlehemkapel",
+          "naam": "Bethlehemkapel",
+          "type": "sublocatie",
+          "latitude": 50.084345,
+          "longitude": 14.417481,
+          "gps_status": "Oldtown-prague.com"
+        },
+        {
+          "id": "praha-07-estates-theatre",
+          "naam": "Estates Theatre",
+          "type": "sublocatie",
+          "latitude": 50.085783,
+          "longitude": 14.423297,
+          "gps_status": "Oldtown-prague.com"
+        },
+        {
+          "id": "praha-07-agnesklooster",
+          "naam": "Agnesklooster",
+          "type": "sublocatie",
+          "latitude": 50.089,
+          "longitude": 14.4225,
+          "gps_status": "kaart"
+        },
+        {
+          "id": "praha-07-naprstek",
+          "naam": "Náprstek Museum",
+          "type": "sublocatie",
+          "latitude": 50.0845,
+          "longitude": 14.4177,
+          "gps_status": "kaart"
+        }
+      ]
+    },
+    {
+      "id": "praha-08-josefov",
+      "naam": "Josefov",
+      "type": "hoofdlocatie",
+      "html": "praha-08-josefov.html",
+      "latitude": 50.09,
+      "longitude": 14.418,
+      "gps_status": "kaart",
+      "sublocations": [
+        {
+          "id": "praha-08-oude-nieuwe-synagoge",
+          "naam": "Oude-Nieuwe Synagoge",
+          "type": "sublocatie",
+          "latitude": 50.09,
+          "longitude": 14.418611,
+          "gps_status": "Wikidata"
+        },
+        {
+          "id": "praha-08-spanse-synagoge",
+          "naam": "Spaanse Synagoge",
+          "type": "sublocatie",
+          "latitude": 50.0909,
+          "longitude": 14.4186,
+          "gps_status": "kaart/Wikidata"
+        },
+        {
+          "id": "praha-08-pinkas-synagoge",
+          "naam": "Pinkassynagoge",
+          "type": "sublocatie",
+          "latitude": 50.0903,
+          "longitude": 14.4173,
+          "gps_status": "kaart"
+        },
+        {
+          "id": "praha-08-maiselsynagoge",
+          "naam": "Maiselsynagoge",
+          "type": "sublocatie",
+          "latitude": 50.088803,
+          "longitude": 14.418856,
+          "gps_status": "Kehila/NPÚ"
+        },
+        {
+          "id": "praha-08-klausensynagoge",
+          "naam": "Klausensynagoge",
+          "type": "sublocatie",
+          "latitude": 50.089906,
+          "longitude": 14.417242,
+          "gps_status": "Kehila/NPÚ"
+        },
+        {
+          "id": "praha-08-joodse-begraafplaats",
+          "naam": "Oude Joodse Begraafplaats",
+          "type": "sublocatie",
+          "latitude": 50.0901,
+          "longitude": 14.4178,
+          "gps_status": "kaart"
+        },
+        {
+          "id": "praha-08-joods-stadhuis",
+          "naam": "Joods Stadhuis",
+          "type": "sublocatie",
+          "latitude": 50.08975,
+          "longitude": 14.41857,
+          "gps_status": "Mapcarta"
+        }
+      ]
+    },
+    {
+      "id": "praha-09-wenceslasplein",
+      "naam": "Wenceslasplein",
+      "type": "hoofdlocatie",
+      "html": "praha-09-wenceslasplein.html",
+      "latitude": 50.081,
+      "longitude": 14.426,
+      "gps_status": "kaart",
+      "sublocations": [
+        {
+          "id": "praha-09-nationaal-museum",
+          "naam": "Nationaal Museum",
+          "type": "sublocatie",
+          "latitude": 50.0799,
+          "longitude": 14.43,
+          "gps_status": "kaart"
+        },
+        {
+          "id": "praha-09-state-opera",
+          "naam": "State Opera",
+          "type": "sublocatie",
+          "latitude": 50.0823,
+          "longitude": 14.433,
+          "gps_status": "kaart"
+        }
+      ]
+    },
+    {
+      "id": "praha-10-narodni",
+      "naam": "Národní & zuidelijk Nové Město",
+      "type": "hoofdlocatie",
+      "html": "praha-10-narodni.html",
+      "latitude": 50.081,
+      "longitude": 14.414,
+      "gps_status": "kaart",
+      "sublocations": [
+        {
+          "id": "praha-10-nationaal-theater",
+          "naam": "Nationaal Theater",
+          "type": "sublocatie",
+          "latitude": 50.0811,
+          "longitude": 14.4133,
+          "gps_status": "kaart"
+        },
+        {
+          "id": "praha-10-karelsplein",
+          "naam": "Karelsplein",
+          "type": "sublocatie",
+          "latitude": 50.0765,
+          "longitude": 14.42,
+          "gps_status": "kaart"
+        },
+        {
+          "id": "praha-10-nieuwe-stadhuis",
+          "naam": "Nieuwe Stadhuis",
+          "type": "sublocatie",
+          "latitude": 50.0768,
+          "longitude": 14.4211,
+          "gps_status": "kaart"
+        },
+        {
+          "id": "praha-10-cyril-methodius",
+          "naam": "Sint-Cyrillus en Methodius",
+          "type": "sublocatie",
+          "latitude": 50.0808,
+          "longitude": 14.4148,
+          "gps_status": "kaart"
+        },
+        {
+          "id": "praha-10-dansende-huis",
+          "naam": "Dansende Huis",
+          "type": "sublocatie",
+          "latitude": 50.0754,
+          "longitude": 14.4147,
+          "gps_status": "kaart"
+        },
+        {
+          "id": "praha-10-dvorak-museum",
+          "naam": "Antonín Dvořák Museum",
+          "type": "sublocatie",
+          "latitude": 50.0745,
+          "longitude": 14.423,
+          "gps_status": "kaart"
+        }
+      ]
+    },
+    {
+      "id": "praha-11-vysehrad",
+      "naam": "Vyšehrad",
+      "type": "hoofdlocatie",
+      "html": "praha-11-vysehrad.html",
+      "latitude": 50.0644,
+      "longitude": 14.4174,
+      "gps_status": "Wikidata/kaart",
+      "sublocations": [
+        {
+          "id": "praha-11-basiliek-petrus-paulus",
+          "naam": "Basiliek Sint-Petrus en Paulus",
+          "type": "sublocatie",
+          "latitude": 50.0644,
+          "longitude": 14.4179,
+          "gps_status": "kaart"
+        },
+        {
+          "id": "praha-11-sint-martinus-rotunda",
+          "naam": "Sint-Martinusrotunda",
+          "type": "sublocatie",
+          "latitude": 50.0649,
+          "longitude": 14.417,
+          "gps_status": "kaart"
+        },
+        {
+          "id": "praha-11-slavin",
+          "naam": "Slavín",
+          "type": "sublocatie",
+          "latitude": 50.0639,
+          "longitude": 14.418,
+          "gps_status": "kaart"
+        },
+        {
+          "id": "praha-11-gorlice",
+          "naam": "Gorlice/casematten",
+          "type": "sublocatie",
+          "latitude": 50.0648,
+          "longitude": 14.4166,
+          "gps_status": "kaart"
+        }
+      ]
+    }
+  ]
+}
