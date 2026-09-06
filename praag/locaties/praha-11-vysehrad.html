@@ -1,0 +1,90 @@
+<!doctype html><html lang="nl"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vyšehrad – Reisblik</title>
+<style>
+@page{size:A4;margin:14mm}
+body{margin:0;color:#292724;font-family:Calibri,"Segoe UI",Arial,sans-serif;font-size:12pt;line-height:1.55}
+main{max-width:180mm;margin:auto}
+header{border-bottom:2px solid #5b4636;padding-bottom:5mm;margin-bottom:7mm}
+.eyebrow{text-transform:uppercase;letter-spacing:.1em;font-weight:700;color:#766b61;font-size:9pt}
+h1{font-size:30pt;line-height:1.05;color:#5b4636;margin:3mm 0}
+h2{font-size:18pt;color:#5b4636;margin:8mm 0 3mm}
+h3{font-size:14pt;color:#5b4636;margin:4mm 0 2mm}
+.intro{font-size:14pt}
+table{width:100%;border-collapse:collapse}
+th,td{padding:2.5mm;border-bottom:1px solid #ddd6ce;text-align:left;vertical-align:top}
+th{width:34%;font-size:10pt}
+.story p{margin:0 0 4mm}.didyou{padding:4mm 5mm;border:1px solid #c8bfb4;margin-top:5mm}
+.person{padding:4mm 5mm;background:#f3f0eb}.practical{padding:4mm 5mm;background:#f7f5f2}
+.sub{padding:2mm 0 3mm;border-bottom:1px solid #ddd6ce}
+.reisblik-bezocht{display:inline-flex;align-items:center;gap:6px;margin:8px 0 16px;padding:9px 13px;border:1px solid #b9c0c3;border-radius:9px;background:#fff;color:#26353a;font:inherit;cursor:pointer}
+</style></head><body><main>
+<header>
+<div class="eyebrow">Vyšehrad · hoofdlocatie</div>
+<h1>Vyšehrad</h1>
+<p class="intro">Vyšehrad is een historische burchtheuvel boven de Moldau en een van de belangrijkste nationale symbolen van Tsjechië. De plek is archeologisch veel ouder dan het huidige fort en werd in de middeleeuwen een koninklijke vesting.</p>
+</header>
+
+<h2>📍 In één oogopslag</h2>
+<table>
+<tr><th>Type</th><td>hoofdlocatie</td></tr>
+<tr><th>Sublocaties</th><td>4</td></tr>
+</table>
+
+<h2>🎤 Het verhaal</h2>
+<div class="story"><p>Vanaf de 10e eeuw is Vyšehrad aantoonbaar een belangrijk machtscentrum. Later verloor het zijn positie aan de Praagse Burcht. De 19e eeuw gaf Vyšehrad een nieuwe betekenis als nationaal herinneringslandschap. Rond de Sint-Petrus-en-Paulusbasiliek ontstond het erekerkhof Slavín.</p></div>
+
+<div class="didyou"><strong>💡 Wist je dat?</strong><br>Archeologisch onderzoek heeft op Vyšehrad sporen gevonden die teruggaan tot ongeveer 3800 v.Chr. De bekende verhalen over prins Krok, Libuše en de held Horymír behoren tot de legendarische traditie en moeten worden onderscheiden van de archeologisch aantoonbare geschiedenis.</div>
+
+<h2>👤 Persoon uit het verhaal</h2>
+<div class="person"><strong>Libuše is de bekendste legendarische figuur van Vyšehrad. Volgens de overlevering voorspelde zij de stichting van Praag. Dit is een legende, geen historisch vastgestelde gebeurtenis.</strong></div>
+
+
+<h2>Wat zie je hier?</h2>
+<div class="sub"><h3>Sint-Petrus-en-Paulusbasiliek</h3></div><div class="sub"><h3>Slavín</h3></div><div class="sub"><h3>Sint-Martinusrotunda</h3></div><div class="sub"><h3>Kazematten / Gorlice</h3></div>
+
+<h2>📍 Praktische informatie</h2>
+<div class="practical">Vyšehrad is rustiger dan de historische binnenstad en is bijzonder geschikt voor wandelen. De vestingwerken hebben hoogteverschillen en sommige onderdelen hebben beperkte toegangstijden.</div>
+
+<h2>🔗 Bronnen</h2>
+<ul><li>Vyšehrad National Cultural Monument; Prague City Tourism; NPÚ; Czech archaeological sources.</li></ul>
+
+<div id="location-data" hidden
+ data-location-id="praha-11-vysehrad"
+ data-location-type="hoofdlocatie"
+ data-lat="50.06442"
+ data-lon="14.41739"
+ data-gps-status="kaart/Wikidata"></div>
+
+<script>
+(function(){
+ const KEY="reisblik_visited_v1";
+ const el=document.getElementById("location-data");
+ if(!el)return;
+ const id=el.dataset.locationId;
+ const main=document.querySelector("main");
+ if(!id||!main)return;
+ function load(){try{return JSON.parse(localStorage.getItem(KEY)||"{}")}catch(e){return {}}}
+ function save(x){localStorage.setItem(KEY,JSON.stringify(x))}
+ function fmt(x){return new Intl.DateTimeFormat("nl-NL",{dateStyle:"short",timeStyle:"short"}).format(new Date(x))}
+ const b=document.createElement("button");
+ b.type="button";b.className="reisblik-bezocht";
+ function refresh(){
+   const d=load(),v=d[id];
+   b.textContent=v?"☑ Bezocht — "+fmt(v.visitedAt):"☐ Bezocht";
+   b.setAttribute("aria-pressed",v?"true":"false");
+ }
+ b.addEventListener("click",function(){
+   const d=load();
+   if(d[id])delete d[id];
+   else d[id]={id:id,name:(main.querySelector("h1")?.textContent||id).trim(),category:el.dataset.locationType||"",visitedAt:new Date().toISOString()};
+   save(d);refresh();
+ });
+ const h1=main.querySelector("h1");
+ const intro=h1?h1.parentElement.querySelector(".intro"):null;
+ if(intro)intro.insertAdjacentElement("afterend",b);
+ else if(h1)h1.insertAdjacentElement("afterend",b);
+ refresh();
+})();
+</script>
+</main></body></html>

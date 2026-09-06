@@ -1,0 +1,90 @@
+<!doctype html><html lang="nl"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Malá Strana – Reisblik</title>
+<style>
+@page{size:A4;margin:14mm}
+body{margin:0;color:#292724;font-family:Calibri,"Segoe UI",Arial,sans-serif;font-size:12pt;line-height:1.55}
+main{max-width:180mm;margin:auto}
+header{border-bottom:2px solid #5b4636;padding-bottom:5mm;margin-bottom:7mm}
+.eyebrow{text-transform:uppercase;letter-spacing:.1em;font-weight:700;color:#766b61;font-size:9pt}
+h1{font-size:30pt;line-height:1.05;color:#5b4636;margin:3mm 0}
+h2{font-size:18pt;color:#5b4636;margin:8mm 0 3mm}
+h3{font-size:14pt;color:#5b4636;margin:4mm 0 2mm}
+.intro{font-size:14pt}
+table{width:100%;border-collapse:collapse}
+th,td{padding:2.5mm;border-bottom:1px solid #ddd6ce;text-align:left;vertical-align:top}
+th{width:34%;font-size:10pt}
+.story p{margin:0 0 4mm}.didyou{padding:4mm 5mm;border:1px solid #c8bfb4;margin-top:5mm}
+.person{padding:4mm 5mm;background:#f3f0eb}.practical{padding:4mm 5mm;background:#f7f5f2}
+.sub{padding:2mm 0 3mm;border-bottom:1px solid #ddd6ce}
+.reisblik-bezocht{display:inline-flex;align-items:center;gap:6px;margin:8px 0 16px;padding:9px 13px;border:1px solid #b9c0c3;border-radius:9px;background:#fff;color:#26353a;font:inherit;cursor:pointer}
+</style></head><body><main>
+<header>
+<div class="eyebrow">Malá Strana · hoofdlocatie</div>
+<h1>Malá Strana</h1>
+<p class="intro">Malá Strana, letterlijk de Kleine Zijde, is de historische wijk aan de voet van de burchtheuvel. De wijk kreeg in 1257 stadsrechten en ontwikkelde zich later tot een gebied van kerken, paleizen, tuinen en representatieve woonhuizen.</p>
+</header>
+
+<h2>📍 In één oogopslag</h2>
+<table>
+<tr><th>Type</th><td>hoofdlocatie</td></tr>
+<tr><th>Sublocaties</th><td>5</td></tr>
+</table>
+
+<h2>🎤 Het verhaal</h2>
+<div class="story"><p>Na de stichting in 1257 groeide Malá Strana uit tot een belangrijke stad aan de voet van de burcht. Grote branden en de verwoestingen van de Hussietenperiode veranderden het middeleeuwse stadsbeeld. In de 17e en 18e eeuw werd de wijk opnieuw opgebouwd in barokke stijl. De adel bouwde hier paleizen en tuinen, waaronder het enorme complex van Albrecht von Wallenstein.</p></div>
+
+<div class="didyou"><strong>💡 Wist je dat?</strong><br>Veel huizen in Nerudova zijn nog herkenbaar aan oude huistekens. Die tekens waren vroeger een praktische manier om een huis te herkennen voordat moderne huisnummers algemeen waren.</div>
+
+<h2>👤 Persoon uit het verhaal</h2>
+<div class="person"><strong>Albrecht von Wallenstein liet in de 17e eeuw een enorm paleiscomplex met tuin bouwen. Zijn politieke opkomst was spectaculair; hij werd uiteindelijk vermoord in Cheb in 1634.</strong></div>
+
+
+<h2>Wat zie je hier?</h2>
+<div class="sub"><h3>Sint-Nicolaaskerk</h3></div><div class="sub"><h3>Nerudova</h3></div><div class="sub"><h3>Wallensteinpaleis</h3></div><div class="sub"><h3>Wallensteintuin</h3></div><div class="sub"><h3>Kerk Onze-Lieve-Vrouw van de Overwinning</h3></div>
+
+<h2>📍 Praktische informatie</h2>
+<div class="practical">Malá Strana is zeer geschikt om lopend te ontdekken. De straten rond Nerudova zijn druk en steil; vroeg op de dag is het er rustiger.</div>
+
+<h2>🔗 Bronnen</h2>
+<ul><li>Prague City Tourism; NPÚ; Wallenstein Palace/Senate; Church of Our Lady Victorious.</li></ul>
+
+<div id="location-data" hidden
+ data-location-id="praha-03-mala-strana"
+ data-location-type="hoofdlocatie"
+ data-lat="50.0877"
+ data-lon="14.405"
+ data-gps-status="gebiedsanker/kaart"></div>
+
+<script>
+(function(){
+ const KEY="reisblik_visited_v1";
+ const el=document.getElementById("location-data");
+ if(!el)return;
+ const id=el.dataset.locationId;
+ const main=document.querySelector("main");
+ if(!id||!main)return;
+ function load(){try{return JSON.parse(localStorage.getItem(KEY)||"{}")}catch(e){return {}}}
+ function save(x){localStorage.setItem(KEY,JSON.stringify(x))}
+ function fmt(x){return new Intl.DateTimeFormat("nl-NL",{dateStyle:"short",timeStyle:"short"}).format(new Date(x))}
+ const b=document.createElement("button");
+ b.type="button";b.className="reisblik-bezocht";
+ function refresh(){
+   const d=load(),v=d[id];
+   b.textContent=v?"☑ Bezocht — "+fmt(v.visitedAt):"☐ Bezocht";
+   b.setAttribute("aria-pressed",v?"true":"false");
+ }
+ b.addEventListener("click",function(){
+   const d=load();
+   if(d[id])delete d[id];
+   else d[id]={id:id,name:(main.querySelector("h1")?.textContent||id).trim(),category:el.dataset.locationType||"",visitedAt:new Date().toISOString()};
+   save(d);refresh();
+ });
+ const h1=main.querySelector("h1");
+ const intro=h1?h1.parentElement.querySelector(".intro"):null;
+ if(intro)intro.insertAdjacentElement("afterend",b);
+ else if(h1)h1.insertAdjacentElement("afterend",b);
+ refresh();
+})();
+</script>
+</main></body></html>
