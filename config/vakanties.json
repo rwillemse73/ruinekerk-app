@@ -12,6 +12,12 @@
       "type": "vast",
       "basePath": "argentinie-chili"
     },
+   {
+      "id": "praag",
+      "naam": "praag",
+      "type": "vast",
+      "basePath": "praag"
+    },
     {
       "id": "evenement-2026",
       "naam": "Evenementen 2026",
