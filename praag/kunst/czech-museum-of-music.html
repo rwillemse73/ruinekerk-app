@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Czech Museum of Music – Praag Reisblik</title>
+<style>
+body{font-family:Calibri,Arial,sans-serif;max-width:900px;margin:0 auto;padding:28px;line-height:1.55;color:#263238;background:#faf9f6}
+h1{font-size:2em;margin-bottom:.15em} h2{margin-top:1.6em;font-size:1.25em}
+.meta{background:#fff;border:1px solid #ddd;border-radius:10px;padding:16px;margin:18px 0}
+.meta div{margin:5px 0} .small{font-size:.9em;color:#666}
+label{display:inline-flex;gap:8px;align-items:center;margin:12px 0;font-weight:bold}
+#visitedAt{font-weight:normal;color:#666}
+</style>
+</head>
+<body>
+<h1>Czech Museum of Music</h1>
+<p class="small">Národní &amp; zuidelijk Nové Město · Praag · kunst</p>
+<label><input type="checkbox" id="visited"> Bezocht <span id="visitedAt"></span></label>
+<div class="meta">
+<div><strong>Adres:</strong> Karmelitská 2/4, Praha 1</div>
+<div><strong>Openingstijden:</strong> gesloten 29 juni–31 dec 2026 wegens renovatie</div>
+<div><strong>GPS:</strong> 50.08031, 14.41819 <span class="small">(exact)</span></div>
+<div><strong>Website:</strong> <a href="https://www.nm.cz/" target="_blank" rel="noopener">https://www.nm.cz/</a></div>
+</div>
+<h2>In één oogopslag</h2>
+<p>kunst in het geografische gebied <strong>Národní &amp; zuidelijk Nové Město</strong>. Gebruik de praktische gegevens als route- en locatiehulp; controleer bij tijdelijke tentoonstellingen of veranderlijke winkeluren altijd de officiële site.</p>
+<h2>Het verhaal / de beschrijving</h2>
+<p>maakt deel uit van het National Museum en toont historische muziekinstrumenten en objecten die de ontwikkeling van de muziekcultuur zichtbaar maken.</p><h2>Waarom interessant?</h2><p>muziekinstrumenten zijn tegelijkertijd gebruiksvoorwerpen, technische objecten en kunstnijverheid.</p><h2>Voor jullie</h2><p>een mooie aanvulling als muziek in jullie Praag-weekend een rol speelt. BEDŘICH SMETANA MUSEUM Type: muziekmuseum Het museum is gewijd aan Bedřich Smetana, een van de belangrijkste componisten uit de Tsjechische muziekgeschiedenis.</p><h2>Waarom interessant?</h2><p>Smetana is sterk verbonden met de ontwikkeling van een herkenbare Tsjechische nationale muziekcultuur.</p><h2>Voor jullie</h2><p>vooral interessant als jullie iets meer over de culturele geschiedenis van Tsjechië willen begrijpen. ANTONÍN DVOŘÁK MUSEUM Type: muziekmuseum Het museum behandelt het leven en werk van Antonín Dvořák, internationaal een van de bekendste Tsjechische componisten.</p><h2>Waarom interessant?</h2><p>het museum brengt de componist terug naar zijn persoonlijke en historische context.</p><h2>Voor jullie</h2><p>vooral interessant voor muziekliefhebbers en als aanvulling op het verhaal van de Tsjechische nationale cultuur. 11. VYŠEHRAD VYŠEHRAD – KUNSTHISTORISCH ENSEMBLE Type: monumentale kunst / openbare ruimte Vyšehrad wordt niet als gewone galerie opgenomen. De kunst zit hier juist verspreid over het terrein: de basiliek, de begraafplaats, het Slavín-monument, beeldhouwwerken, grafmonumenten en de historische architectuur vormen samen één groot kunsthistorisch ensemble. De begraafplaats is bovendien een soort openluchtgeschiedenis van de Tsjechische cultuur. Kunstenaars, schrijvers, componisten, wetenschappers en andere prominente Tsjechen liggen hier begraven.</p><h2>Waarom interessant?</h2><p>je beleeft kunst hier buiten de muren van een museum.</p><h2>Voor jullie</h2><p>zeer geschikt als onderdeel van een wandeling door Vyšehrad. STERKE KUNSTSTOPPEN VOOR HET WEEKEND Absolute toppers: 1</p>
+<h2>Praktische informatie</h2>
+<p>De GPS-gegevens zijn technische locatiegegevens voor Reisblik en worden niet als onderdeel van de publieksbeschrijving gebruikt. Waar geen directe coördinaatbron beschikbaar was, is de positie als geschat gemarkeerd.</p>
+<h2>Bronnen</h2>
+<p><a href="https://www.nm.cz/" target="_blank" rel="noopener">https://www.nm.cz/</a></p>
+<p class="small">Technische versie: 1.0 · samengesteld 6 september 2026</p>
+<div id="gps" data-location-id="czech-museum-of-music" data-location-type="kunst" data-lat="50.08031" data-lon="14.41819" data-gps-status="exact" hidden></div>
+<script>
+const key="reisblik_bezocht_"+"czech-museum-of-music";
+const cb=document.getElementById("visited"), stamp=document.getElementById("visitedAt");
+function render(){
+ const v=localStorage.getItem(key);
+ cb.checked=!!v;
+ stamp.textContent=v ? "· bezocht op "+new Date(v).toLocaleString("nl-NL") : "";
+}
+cb.addEventListener("change",()=>{
+ if(cb.checked) localStorage.setItem(key,new Date().toISOString());
+ else localStorage.removeItem(key);
+ render();
+});
+render();
+</script>
+</body></html>
