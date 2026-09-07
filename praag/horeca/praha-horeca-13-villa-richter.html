@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VILLA RICHTER – Reisblik Praag</title>
+<style>
+:root{--ink:#263238;--muted:#68747b;--paper:#fff;--soft:#f3f5f4;--line:#d9dfdc;--accent:#526b63}
+*{box-sizing:border-box}
+body{margin:0;background:#eef1ef;color:var(--ink);font-family:Calibri,"Segoe UI",Arial,sans-serif;line-height:1.62}
+.wrap{max-width:900px;margin:32px auto;padding:0 18px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:34px;box-shadow:0 5px 20px rgba(0,0,0,.05)}
+.kicker{color:var(--muted);font-size:.9rem;letter-spacing:.05em;text-transform:uppercase}
+h1{font-size:2.2rem;line-height:1.15;margin:.2rem 0 .8rem}
+h2{font-size:1.35rem;margin-top:2rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.intro{font-size:1.08rem}
+.visit{display:flex;gap:12px;align-items:center;background:var(--soft);padding:12px 14px;border-radius:10px;margin:22px 0}
+.visit input{width:20px;height:20px}
+.visit small{display:block;color:var(--muted)}
+.meta{display:grid;grid-template-columns:150px 1fr;gap:7px 18px;margin:16px 0}
+.meta dt{font-weight:700}.meta dd{margin:0}
+.note{background:#f7f8f7;border-left:4px solid var(--accent);padding:12px 15px;margin:15px 0}
+.back{display:inline-block;margin-bottom:15px;color:var(--accent);text-decoration:none}
+footer{margin-top:32px;color:var(--muted);font-size:.88rem}
+@media(max-width:650px){.card{padding:22px}.meta{grid-template-columns:1fr}.meta dt{margin-top:7px}h1{font-size:1.8rem}}
+</style>
+</head>
+<body data-location-id="praha-horeca-13-villa-richter">
+<div class="wrap">
+<a class="back" href="../index.html">← Terug naar Praag horeca</a>
+<main class="card">
+<div class="kicker">Reisblik · Praag · horeca 13</div>
+<h1>VILLA RICHTER</h1>
+<p class="intro">Villa Richter is een bijzondere toevoeging aan de Burchtdag omdat hier iets samenkomt wat je niet snel met Praag associeert: een historische wijngaard midden in de stad.
+
+De Sint-Wenceslauswijngaard wordt door de exploitant beschreven als een van de oudste wijngaarden van Tsjechië, met een geschiedenis van meer dan duizend jaar. De verbinding met Sint-Wenceslaus is deels historisch en deels legendarisch; de overlevering dat hij zelf de wijnstokken zou hebben geplant moet als legende worden behandeld.
+
+De Villa zelf biedt een panoramisch uitzicht over Praag, Malá Strana en het historische centrum. De wijnkelder ligt letterlijk in het gesteente onder de Praagse Burcht.
+
+Voor jullie weekend is vooral de wijngaard/wijnervaring interessant. Het restaurant is een bijzondere optie voor een speciaal moment, maar de actuele seizoenssluiting maakt het geen gegarandeerde lunchplek.</p>
+
+<label class="visit">
+<input id="bezocht" type="checkbox">
+<span><strong>Bezocht</strong><small id="bezochtStatus">Nog niet bezocht</small></span>
+</label>
+
+<h2>In één oogopslag</h2>
+<dl class="meta">
+<dt>Hoofdgebied</dt><dd>Praagse Burcht / Sint-Wenceslauswijngaard</dd>
+<dt>Type</dt><dd>Restaurant / wijnlocatie</dd>
+<dt>Adres</dt><dd>Staré zámecké schody 6/251, 118 00 Praha 1</dd>
+<dt>Google</dt><dd>4,4 / 816 beoordelingen</dd>
+<dt>Openingstijden</dt><dd></dd>
+<dt>Website</dt><dd><a href="https://www.villarichter.cz/en/" target="_blank" rel="noopener">https://www.villarichter.cz/en/</a></dd>
+</dl>
+
+<div class="note"><strong>Actuele status:</strong> De bron vermeldt een seizoenssluiting; controleer de actuele openstelling voor vertrek.</div>
+<h2>Bijzonder</h2>
+<p>Wijngaard + wijn + uitzicht + Burcht.</p>
+
+<h2>Wanneer in de route</h2>
+<p>Tijdens of na de Praagse Burcht, afhankelijk van de actuele openstelling.</p>
+
+<h2>Praktische informatie</h2>
+<p>De Villa Richter Restaurant is volgens de officiële website vanaf 26 april 2026 gesloten voor de zomerperiode en opent weer in oktober 2026. De wijngaard heeft daarnaast een dagelijks geopende Richter&#x27;s Street Food Market van 11:00–19:00 en een pergola die afhankelijk is van het weer. Deze onderdelen moeten in de definitieve horeca-app afzonderlijk worden behandeld als de gebruiker ze als horeca wil opnemen; voor deze vaste lijst blijft Villa Richter één item.</p>
+
+<h2>Bronnen</h2>
+<p>Villa Richter, officiële website; Prague City Tourism.</p>
+
+<footer>Technische GPS-coördinaten zijn bewust niet zichtbaar in de pagina. Locatie-id: praha-horeca-13-villa-richter</footer>
+</main>
+</div>
+<script>
+(function(){
+ const id = document.body.dataset.locationId;
+ const key = "reisblik_bezocht_" + id;
+ const timeKey = key + "_tijd";
+ const cb = document.getElementById("bezocht");
+ const status = document.getElementById("bezochtStatus");
+ function render(){
+   const checked = localStorage.getItem(key) === "1";
+   cb.checked = checked;
+   const t = localStorage.getItem(timeKey);
+   status.textContent = checked && t ? "Bezocht geregistreerd op " + new Date(t).toLocaleString("nl-NL") : "Nog niet bezocht";
+ }
+ cb.addEventListener("change", function(){
+   if(cb.checked){ localStorage.setItem(key,"1"); localStorage.setItem(timeKey,new Date().toISOString()); }
+   else { localStorage.removeItem(key); localStorage.removeItem(timeKey); }
+   render();
+ });
+ render();
+})();
+</script>
+</body>
+</html>

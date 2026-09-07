@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HOSPŮDKA NA HRADBÁCH – Reisblik Praag</title>
+<style>
+:root{--ink:#263238;--muted:#68747b;--paper:#fff;--soft:#f3f5f4;--line:#d9dfdc;--accent:#526b63}
+*{box-sizing:border-box}
+body{margin:0;background:#eef1ef;color:var(--ink);font-family:Calibri,"Segoe UI",Arial,sans-serif;line-height:1.62}
+.wrap{max-width:900px;margin:32px auto;padding:0 18px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:34px;box-shadow:0 5px 20px rgba(0,0,0,.05)}
+.kicker{color:var(--muted);font-size:.9rem;letter-spacing:.05em;text-transform:uppercase}
+h1{font-size:2.2rem;line-height:1.15;margin:.2rem 0 .8rem}
+h2{font-size:1.35rem;margin-top:2rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.intro{font-size:1.08rem}
+.visit{display:flex;gap:12px;align-items:center;background:var(--soft);padding:12px 14px;border-radius:10px;margin:22px 0}
+.visit input{width:20px;height:20px}
+.visit small{display:block;color:var(--muted)}
+.meta{display:grid;grid-template-columns:150px 1fr;gap:7px 18px;margin:16px 0}
+.meta dt{font-weight:700}.meta dd{margin:0}
+.note{background:#f7f8f7;border-left:4px solid var(--accent);padding:12px 15px;margin:15px 0}
+.back{display:inline-block;margin-bottom:15px;color:var(--accent);text-decoration:none}
+footer{margin-top:32px;color:var(--muted);font-size:.88rem}
+@media(max-width:650px){.card{padding:22px}.meta{grid-template-columns:1fr}.meta dt{margin-top:7px}h1{font-size:1.8rem}}
+</style>
+</head>
+<body data-location-id="praha-horeca-10-hospudka-na-hradbach">
+<div class="wrap">
+<a class="back" href="../index.html">← Terug naar Praag horeca</a>
+<main class="card">
+<div class="kicker">Reisblik · Praag · horeca 10</div>
+<h1>HOSPŮDKA NA HRADBÁCH</h1>
+<p class="intro">Hospůdka Na Hradbách ligt letterlijk op de vestingwerken van Vyšehrad, bij het Bastion van Sint Rochus. Dat is de reden waarom deze eenvoudige horecaplek in de lijst hoort.
+
+Het is geen restaurant voor een uitgebreid gastronomisch diner. Het is juist een plek waar je tijdens een wandeling over de vesting kunt neerstrijken voor iets te eten of drinken, met uitzicht over Praag. Er zijn tafels buiten en de zaak organiseert ook culturele activiteiten zoals concerten, filmvertoningen en andere evenementen.
+
+Voor jullie weekend is dit vooral de informele optie: jas uit, iets drinken, uitzicht erbij en verder wandelen.</p>
+
+<label class="visit">
+<input id="bezocht" type="checkbox">
+<span><strong>Bezocht</strong><small id="bezochtStatus">Nog niet bezocht</small></span>
+</label>
+
+<h2>In één oogopslag</h2>
+<dl class="meta">
+<dt>Hoofdgebied</dt><dd>Vyšehrad</dd>
+<dt>Type</dt><dd>Pub / grill / eenvoudige horeca</dd>
+<dt>Adres</dt><dd>V Pevnosti 16/2, 120 00 Praha 2</dd>
+<dt>Google</dt><dd>4,3 / 67 beoordelingen</dd>
+<dt>Openingstijden</dt><dd></dd>
+<dt>Website</dt><dd><a href="https://na-hradbach.cz/" target="_blank" rel="noopener">https://na-hradbach.cz/</a></dd>
+</dl>
+
+
+<h2>Bijzonder</h2>
+<p>Vestingwerken + uitzicht + informele sfeer.</p>
+
+<h2>Wanneer in de route</h2>
+<p>Pauze tijdens de wandeling over Vyšehrad.</p>
+
+<h2>Praktische informatie</h2>
+<p>Bar ma–vr 12:00–24:00, za–zo 10:00–24:00. Grill ma–vr 13:00–21:30, za–zo 11:30–21:30.</p>
+
+<h2>Bronnen</h2>
+<p>Prague City Tourism; Google/gestructureerde bedrijfsinformatie.</p>
+
+<footer>Technische GPS-coördinaten zijn bewust niet zichtbaar in de pagina. Locatie-id: praha-horeca-10-hospudka-na-hradbach</footer>
+</main>
+</div>
+<script>
+(function(){
+ const id = document.body.dataset.locationId;
+ const key = "reisblik_bezocht_" + id;
+ const timeKey = key + "_tijd";
+ const cb = document.getElementById("bezocht");
+ const status = document.getElementById("bezochtStatus");
+ function render(){
+   const checked = localStorage.getItem(key) === "1";
+   cb.checked = checked;
+   const t = localStorage.getItem(timeKey);
+   status.textContent = checked && t ? "Bezocht geregistreerd op " + new Date(t).toLocaleString("nl-NL") : "Nog niet bezocht";
+ }
+ cb.addEventListener("change", function(){
+   if(cb.checked){ localStorage.setItem(key,"1"); localStorage.setItem(timeKey,new Date().toISOString()); }
+   else { localStorage.removeItem(key); localStorage.removeItem(timeKey); }
+   render();
+ });
+ render();
+})();
+</script>
+</body>
+</html>
