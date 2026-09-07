@@ -1,0 +1,106 @@
+{
+  "version": "1.0",
+  "categorie": "locaties",
+  "gps_method": "geografisch centrum / logische routepositie binnen Praagse deelgebieden",
+  "locations": [
+    {
+      "id": "praha-praagse-burcht",
+      "naam": "Praagse Burcht",
+      "html": "praha-praagse-burcht.html",
+      "latitude": 50.0908,
+      "longitude": 14.4005,
+      "gps_status": "estimated",
+      "type": "locaties"
+    },
+    {
+      "id": "praha-hradcany-strahov",
+      "naam": "Hradčany & Strahov",
+      "html": "praha-hradcany-strahov.html",
+      "latitude": 50.088,
+      "longitude": 14.39,
+      "gps_status": "estimated",
+      "type": "locaties"
+    },
+    {
+      "id": "praha-mala-strana",
+      "naam": "Malá Strana",
+      "html": "praha-mala-strana.html",
+      "latitude": 50.087,
+      "longitude": 14.405,
+      "gps_status": "estimated",
+      "type": "locaties"
+    },
+    {
+      "id": "praha-kampa-moldau-oever",
+      "naam": "Kampa & Moldau-oever",
+      "html": "praha-kampa-moldau-oever.html",
+      "latitude": 50.0855,
+      "longitude": 14.411,
+      "gps_status": "estimated",
+      "type": "locaties"
+    },
+    {
+      "id": "praha-karelsbrug",
+      "naam": "Karelsbrug",
+      "html": "praha-karelsbrug.html",
+      "latitude": 50.0865,
+      "longitude": 14.4114,
+      "gps_status": "estimated",
+      "type": "locaties"
+    },
+    {
+      "id": "praha-oude-stadsplein",
+      "naam": "Oude Stadsplein & omgeving",
+      "html": "praha-oude-stadsplein.html",
+      "latitude": 50.087,
+      "longitude": 14.4208,
+      "gps_status": "estimated",
+      "type": "locaties"
+    },
+    {
+      "id": "praha-klementinum",
+      "naam": "Klementinum & cultureel Staré Město",
+      "html": "praha-klementinum.html",
+      "latitude": 50.0865,
+      "longitude": 14.4165,
+      "gps_status": "estimated",
+      "type": "locaties"
+    },
+    {
+      "id": "praha-josefov",
+      "naam": "Josefov",
+      "html": "praha-josefov.html",
+      "latitude": 50.0905,
+      "longitude": 14.417,
+      "gps_status": "estimated",
+      "type": "locaties"
+    },
+    {
+      "id": "praha-wenceslasplein",
+      "naam": "Wenceslasplein & Nationaal Museum",
+      "html": "praha-wenceslasplein.html",
+      "latitude": 50.0808,
+      "longitude": 14.431,
+      "gps_status": "estimated",
+      "type": "locaties"
+    },
+    {
+      "id": "praha-narodni-zuidelijk-nove-mesto",
+      "naam": "Národní & zuidelijk Nové Město",
+      "html": "praha-narodni-zuidelijk-nove-mesto.html",
+      "latitude": 50.0815,
+      "longitude": 14.4145,
+      "gps_status": "estimated",
+      "type": "locaties"
+    },
+    {
+      "id": "praha-vysehrad",
+      "naam": "Vyšehrad",
+      "html": "praha-vysehrad.html",
+      "latitude": 50.0644,
+      "longitude": 14.4178,
+      "gps_status": "estimated",
+      "type": "locaties"
+    }
+  ]
+}
