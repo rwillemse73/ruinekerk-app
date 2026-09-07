@@ -1,0 +1,141 @@
+{
+  "version": "1.2",
+  "formatVersion": "1.2",
+  "sourceFile": "locaties/locaties.json",
+  "createdAt": "2026-09-07T18:01:20.956139+00:00",
+  "description": "Definitieve Praag hoofdlocaties — 11 geografische hoofdlocaties; GPS gecontroleerd. Manifest voor Reisblik categorie locaties.",
+  "locations": [
+    {
+      "id": "praha-01-praagse-burcht",
+      "name": "Praagse Burcht",
+      "type": "locaties",
+      "html": "praha-01-praagse-burcht.html",
+      "content": "praha-01-praagse-burcht.html",
+      "lat": 50.0908114,
+      "lon": 14.4005229,
+      "latitude": 50.0908114,
+      "longitude": 14.4005229,
+      "gps_status": "gecontroleerd web/gebiedsanker"
+    },
+    {
+      "id": "praha-02-hradcanske-namesti",
+      "name": "Hradčanské náměstí",
+      "type": "locaties",
+      "html": "praha-02-hradcanske-namesti.html",
+      "content": "praha-02-hradcanske-namesti.html",
+      "lat": 50.0896575,
+      "lon": 14.3972892,
+      "latitude": 50.0896575,
+      "longitude": 14.3972892,
+      "gps_status": "gecontroleerd web/plein"
+    },
+    {
+      "id": "praha-03-mala-strana",
+      "name": "Malá Strana",
+      "type": "locaties",
+      "html": "praha-03-mala-strana.html",
+      "content": "praha-03-mala-strana.html",
+      "lat": 50.08716,
+      "lon": 14.40482,
+      "latitude": 50.08716,
+      "longitude": 14.40482,
+      "gps_status": "gecontroleerd web/gebiedsanker"
+    },
+    {
+      "id": "praha-04-kampa",
+      "name": "Kampa & Moldau-oever",
+      "type": "locaties",
+      "html": "praha-04-kampa.html",
+      "content": "praha-04-kampa.html",
+      "lat": 50.0849,
+      "lon": 14.4078,
+      "latitude": 50.0849,
+      "longitude": 14.4078,
+      "gps_status": "gecontroleerd web/gebiedsanker"
+    },
+    {
+      "id": "praha-05-karelsbrug",
+      "name": "Karelsbrug",
+      "type": "locaties",
+      "html": "praha-05-karelsbrug.html",
+      "content": "praha-05-karelsbrug.html",
+      "lat": 50.0864092,
+      "lon": 14.4119353,
+      "latitude": 50.0864092,
+      "longitude": 14.4119353,
+      "gps_status": "gecontroleerd web"
+    },
+    {
+      "id": "praha-06-oude-stadsplein",
+      "name": "Oude Stadsplein",
+      "type": "locaties",
+      "html": "praha-06-oude-stadsplein.html",
+      "content": "praha-06-oude-stadsplein.html",
+      "lat": 50.087558,
+      "lon": 14.420896,
+      "latitude": 50.087558,
+      "longitude": 14.420896,
+      "gps_status": "gecontroleerd web"
+    },
+    {
+      "id": "praha-07-klementinum",
+      "name": "Klementinum",
+      "type": "locaties",
+      "html": "praha-07-klementinum.html",
+      "content": "praha-07-klementinum.html",
+      "lat": 50.086605,
+      "lon": 14.4156719,
+      "latitude": 50.086605,
+      "longitude": 14.4156719,
+      "gps_status": "gecontroleerd web"
+    },
+    {
+      "id": "praha-08-josefov",
+      "name": "Josefov",
+      "type": "locaties",
+      "html": "praha-08-josefov.html",
+      "content": "praha-08-josefov.html",
+      "lat": 50.09002,
+      "lon": 14.41802,
+      "latitude": 50.09002,
+      "longitude": 14.41802,
+      "gps_status": "gecontroleerd web/gebiedsanker"
+    },
+    {
+      "id": "praha-09-wenceslasplein",
+      "name": "Wenceslasplein",
+      "type": "locaties",
+      "html": "praha-09-wenceslasplein.html",
+      "content": "praha-09-wenceslasplein.html",
+      "lat": 50.0814917,
+      "lon": 14.4266722,
+      "latitude": 50.0814917,
+      "longitude": 14.4266722,
+      "gps_status": "gecontroleerd web/gebiedsanker"
+    },
+    {
+      "id": "praha-10-narodni",
+      "name": "Národní & zuidelijk Nové Město",
+      "type": "locaties",
+      "html": "praha-10-narodni.html",
+      "content": "praha-10-narodni.html",
+      "lat": 50.0812583,
+      "lon": 14.4134711,
+      "latitude": 50.0812583,
+      "longitude": 14.4134711,
+      "gps_status": "gecontroleerd web/anker Nationaal Theater"
+    },
+    {
+      "id": "praha-11-vysehrad",
+      "name": "Vyšehrad",
+      "type": "locaties",
+      "html": "praha-11-vysehrad.html",
+      "content": "praha-11-vysehrad.html",
+      "lat": 50.0645886,
+      "lon": 14.41782,
+      "latitude": 50.0645886,
+      "longitude": 14.41782,
+      "gps_status": "gecontroleerd web/gebiedsanker"
+    }
+  ]
+}
