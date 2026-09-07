@@ -1,0 +1,118 @@
+{
+  "formatVersion": "1.1",
+  "sourceFile": "08c54158-5f28-4a4a-83cd-6756975102a7.txt",
+  "createdAt": "2026-09-07T16:49:15.052192",
+  "description": "Praag hoofdlocaties; HTML is compatibel met de Reisblik content-loader en behoudt de TXT-inhoud.",
+  "locations": [
+    {
+      "id": "praha-01-praagse-burcht",
+      "name": "Praagse Burcht",
+      "type": "locaties",
+      "html": "locaties/praha-01-praagse-burcht.html",
+      "content": "praha-01-praagse-burcht.html",
+      "latitude": 50.09,
+      "longitude": 14.4,
+      "gps_status": "masterdata"
+    },
+    {
+      "id": "praha-02-hradcanske-namesti",
+      "name": "Hradčanské náměstí",
+      "type": "locaties",
+      "html": "locaties/praha-02-hradcanske-namesti.html",
+      "content": "praha-02-hradcanske-namesti.html",
+      "latitude": 50.09,
+      "longitude": 14.4,
+      "gps_status": "masterdata"
+    },
+    {
+      "id": "praha-03-mala-strana",
+      "name": "Malá Strana",
+      "type": "locaties",
+      "html": "locaties/praha-03-mala-strana.html",
+      "content": "praha-03-mala-strana.html",
+      "latitude": 50.0877,
+      "longitude": 14.405,
+      "gps_status": "masterdata"
+    },
+    {
+      "id": "praha-04-kampa",
+      "name": "Kampa & Moldau-oever",
+      "type": "locaties",
+      "html": "locaties/praha-04-kampa.html",
+      "content": "praha-04-kampa.html",
+      "latitude": 50.0849,
+      "longitude": 14.4078,
+      "gps_status": "masterdata"
+    },
+    {
+      "id": "praha-05-karelsbrug",
+      "name": "Karelsbrug",
+      "type": "locaties",
+      "html": "locaties/praha-05-karelsbrug.html",
+      "content": "praha-05-karelsbrug.html",
+      "latitude": 50.086409,
+      "longitude": 14.411935,
+      "gps_status": "masterdata"
+    },
+    {
+      "id": "praha-06-oude-stadsplein",
+      "name": "Oude Stadsplein",
+      "type": "locaties",
+      "html": "locaties/praha-06-oude-stadsplein.html",
+      "content": "praha-06-oude-stadsplein.html",
+      "latitude": 50.087558,
+      "longitude": 14.420896,
+      "gps_status": "masterdata"
+    },
+    {
+      "id": "praha-07-klementinum",
+      "name": "Klementinum",
+      "type": "locaties",
+      "html": "locaties/praha-07-klementinum.html",
+      "content": "praha-07-klementinum.html",
+      "latitude": 50.086605,
+      "longitude": 14.415672,
+      "gps_status": "masterdata"
+    },
+    {
+      "id": "praha-08-josefov",
+      "name": "Josefov",
+      "type": "locaties",
+      "html": "locaties/praha-08-josefov.html",
+      "content": "praha-08-josefov.html",
+      "latitude": 50.09,
+      "longitude": 14.418,
+      "gps_status": "masterdata"
+    },
+    {
+      "id": "praha-09-wenceslasplein",
+      "name": "Wenceslasplein",
+      "type": "locaties",
+      "html": "locaties/praha-09-wenceslasplein.html",
+      "content": "praha-09-wenceslasplein.html",
+      "latitude": 50.081,
+      "longitude": 14.426,
+      "gps_status": "masterdata"
+    },
+    {
+      "id": "praha-10-narodni",
+      "name": "Národní & zuidelijk Nové Město",
+      "type": "locaties",
+      "html": "locaties/praha-10-narodni.html",
+      "content": "praha-10-narodni.html",
+      "latitude": 50.081,
+      "longitude": 14.414,
+      "gps_status": "masterdata"
+    },
+    {
+      "id": "praha-11-vysehrad",
+      "name": "Vyšehrad",
+      "type": "locaties",
+      "html": "locaties/praha-11-vysehrad.html",
+      "content": "praha-11-vysehrad.html",
+      "latitude": 50.06442,
+      "longitude": 14.41739,
+      "gps_status": "masterdata"
+    }
+  ]
+}
