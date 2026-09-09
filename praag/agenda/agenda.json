@@ -1,0 +1,207 @@
+{
+  "formatVersion": "2.0",
+  "agendaVersion": "1.0",
+  "sourceFile": "Praag_23-25_oktober_2026",
+  "createdAt": "2026-09-09",
+  "description": "Definitieve Reisblik-agenda voor Praag, vrijdagmiddag 23 oktober t/m zondag 25 oktober 2026. Eenmalige evenementen zijn op verzoek verwijderd. Alleen de goedgekeurde evenementen uit categorie 2 en 3 zijn opgenomen.",
+  "events": [
+    {
+      "id": "prague-2026-coffee-festival",
+      "name": "Prague Coffee Festival",
+      "date": "2026-10-24/2026-10-25",
+      "location": "Prague Exhibition Grounds (Výstaviště Praha), Prague",
+      "lat": 50.1048,
+      "lon": 14.4309,
+      "type": "📅 Evenementen met een looptijd",
+      "organizer": "Prague Coffee Festival",
+      "price": "Zie organisator",
+      "description": "Twee dagen rond specialty coffee met branders, barista’s en koffieproducenten. Een levendige, internationale en inhoudelijke stadsactiviteit.",
+      "source": "Prague City Tourism",
+      "eventUrl": "https://praguecoffee.cz/",
+      "sourceUrl": "https://prague.eu/en/akce-kategorie/festivals-celebrations/",
+      "image": "",
+      "reisblikMatch": true,
+      "matchReasons": [
+        "bijzondere stadsbeleving",
+        "internationaal en inhoudelijk",
+        "lokale makers en vakmanschap"
+      ]
+    },
+    {
+      "id": "prague-2026-david-tibet",
+      "name": "David Tibet: Hallucinate, Children",
+      "date": "2026-10-23/2027-04-04",
+      "location": "DOX Centre for Contemporary Art, Poupětova 1, Prague 7",
+      "lat": 50.1039,
+      "lon": 14.4507,
+      "type": "📅 Evenementen met een looptijd",
+      "organizer": "DOX Centre for Contemporary Art",
+      "price": "Zie organisator",
+      "description": "Tentoonstelling met beeldend werk van David Tibet, verbonden met zijn muziek, geschriften en interesse in visionaire en esoterische literatuur. Vanaf vrijdag 23 oktober te bezoeken.",
+      "source": "DOX Centre for Contemporary Art",
+      "eventUrl": "https://www.dox.cz/en/whats-on/david-tibet-hallucinate-children",
+      "sourceUrl": "https://www.dox.cz/en/whats-on/david-tibet-hallucinate-children",
+      "image": "",
+      "reisblikMatch": true,
+      "matchReasons": [
+        "ongebruikelijk en inhoudelijk",
+        "kunst en muziek komen samen",
+        "past bij ontdekkend Reisblik"
+      ]
+    },
+    {
+      "id": "prague-2026-argus-medusa",
+      "name": "Argus & Medusa — On Hope in Dark Times",
+      "date": "2026-10-02/2027-04-04",
+      "location": "DOX Centre for Contemporary Art, Poupětova 1, Prague 7",
+      "lat": 50.1039,
+      "lon": 14.4507,
+      "type": "📅 Evenementen met een looptijd",
+      "organizer": "DOX Centre for Contemporary Art",
+      "price": "Zie organisator",
+      "description": "Internationale hedendaagse kunst rond The Raft of the Medusa van Théodore Géricault en de vraag hoe hedendaagse kunstenaars reageren op hoop en wanhoop in donkere tijden.",
+      "source": "DOX Centre for Contemporary Art",
+      "eventUrl": "https://www.dox.cz/en/whats-on",
+      "sourceUrl": "https://www.dox.cz/en/whats-on/opening-fall-2026",
+      "image": "",
+      "reisblikMatch": true,
+      "matchReasons": [
+        "historische kunst als vertrekpunt",
+        "hedendaagse interpretaties",
+        "inhoudelijk en niet alledaags"
+      ]
+    },
+    {
+      "id": "prague-2026-terra-incognita",
+      "name": "Terra Incognita",
+      "date": "2026-10-01/2027-01-03",
+      "location": "Prague City Gallery — House of Photography, Prague",
+      "lat": 50.0879,
+      "lon": 14.4195,
+      "type": "📅 Evenementen met een looptijd",
+      "organizer": "Prague City Gallery",
+      "price": "Zie organisator",
+      "description": "Hedendaagse tentoonstelling in het House of Photography. Een inhoudelijke kunststop in het centrum van Praag.",
+      "source": "Prague City Tourism",
+      "eventUrl": "https://prague.eu/en/akce/terra-incognita/",
+      "sourceUrl": "https://prague.eu/en/akce-kategorie/contemporary-art/",
+      "image": "",
+      "reisblikMatch": true,
+      "matchReasons": [
+        "hedendaagse kunst",
+        "centrumlocatie",
+        "goed te combineren met andere stadsbezoeken"
+      ]
+    },
+    {
+      "id": "prague-2026-dsc-secondary-second-drop",
+      "name": "DSC Secondary Second Drop",
+      "date": "2026-09-08/2026-10-27",
+      "location": "DSC Gallery, Dlouhá 5, Prague 1",
+      "lat": 50.0907,
+      "lon": 14.4257,
+      "type": "📅 Evenementen met een looptijd",
+      "organizer": "DSC Gallery",
+      "price": "Zie organisator",
+      "description": "Selectie van belangrijke werken uit particuliere collecties, met meerdere generaties Tsjechische kunst. De tentoonstelling is op vrijdag 23 oktober van 13:00–18:00 te bezoeken.",
+      "source": "Prague City Tourism / DSC Gallery",
+      "eventUrl": "https://prague.eu/en/akce/dsc-secondary-second-drop/",
+      "sourceUrl": "https://prague.eu/en/akce/dsc-secondary-second-drop/",
+      "image": "",
+      "reisblikMatch": true,
+      "matchReasons": [
+        "kunst uit particuliere collecties",
+        "Tsjechische kunstgeschiedenis",
+        "kleinschaliger dan een groot museum"
+      ]
+    },
+    {
+      "id": "prague-2026-ngp-230",
+      "name": "230 Years of the NGP",
+      "date": "2026-03-26/2027-01-03",
+      "location": "National Gallery Prague — Trade Fair Palace, Prague 7",
+      "lat": 50.1031,
+      "lon": 14.4329,
+      "type": "📅 Evenementen met een looptijd",
+      "organizer": "National Gallery Prague",
+      "price": "Zie organisator",
+      "description": "Jubileumtentoonstelling ter gelegenheid van 230 jaar National Gallery Prague, met werken en verhalen rond de geschiedenis van de collectie en het Trade Fair Palace.",
+      "source": "National Gallery Prague",
+      "eventUrl": "https://www.ngprague.cz/en/event/4659/230-Years-of-the-NGP",
+      "sourceUrl": "https://www.ngprague.cz/en/event/4659/230-Years-of-the-NGP",
+      "image": "",
+      "reisblikMatch": true,
+      "matchReasons": [
+        "kunst en geschiedenis",
+        "bijzondere collectiecontext",
+        "belangrijke Praagse culturele instelling"
+      ]
+    },
+    {
+      "id": "prague-2026-sherlock-holmes-exhibition",
+      "name": "Sherlock Holmes: The Exhibition",
+      "date": "2026-07-22/2027-01-10",
+      "location": "OD Bílá Labuť, Na Poříčí 1068/23, Prague",
+      "lat": 50.0903,
+      "lon": 14.432,
+      "type": "📅 Evenementen met een looptijd",
+      "organizer": "Sherlock Holmes: The Exhibition",
+      "price": "250–1400 CZK",
+      "description": "Interactieve tentoonstelling rond Sherlock Holmes, Arthur Conan Doyle, Victoriaanse wetenschap en forensisch onderzoek. Bezoekers kunnen zelf aanwijzingen verzamelen en een zaak oplossen.",
+      "source": "GoOut / Sherlock Holmes: The Exhibition",
+      "eventUrl": "https://www.sherlockholmespraha.cz/",
+      "sourceUrl": "https://goout.net/en/sherlock-holmes-the-exhibition/szyhtiy/",
+      "image": "",
+      "reisblikMatch": true,
+      "matchReasons": [
+        "interactief",
+        "verhaal en geschiedenis",
+        "ongebruikelijk bezoek"
+      ]
+    },
+    {
+      "id": "prague-2026-invisible-exhibition",
+      "name": "Invisible Exhibition — Basic Tour",
+      "date": "2026-10-24/2026-10-25",
+      "location": "New Town Hall, Karlovo náměstí 23, Prague",
+      "lat": 50.0754,
+      "lon": 14.4206,
+      "type": "📅 Evenementen met een looptijd",
+      "organizer": "Neviditelná výstava",
+      "price": "0–850 CZK",
+      "description": "Ervaring waarbij bezoekers een deel van de wereld vanuit het perspectief van iemand zonder zicht beleven. Een ongebruikelijke, zintuiglijke activiteit die zelfstandig kan worden ervaren.",
+      "source": "Neviditelná výstava / GoOut",
+      "eventUrl": "https://www.neviditelna.cz/",
+      "sourceUrl": "https://goout.net/en/invisible-exhibition-basic-tour/szvjbby/",
+      "image": "",
+      "reisblikMatch": true,
+      "matchReasons": [
+        "ongebruikelijke ervaring",
+        "zintuiglijk en actief",
+        "past goed bij knutterige ontdekkingen"
+      ]
+    },
+    {
+      "id": "prague-2026-labyrinth-wandering-within",
+      "name": "Labyrinth: Wandering Within",
+      "date": "2026-04-01/2026-10-29",
+      "location": "GHMP Zámek Troja, U Trojského zámku 1/4, Prague 7",
+      "lat": 50.1166,
+      "lon": 14.4136,
+      "type": "📍 Bezoekwaardige locaties",
+      "organizer": "Prague City Gallery (GHMP)",
+      "price": "200 CZK volwassenen",
+      "description": "Tentoonstelling die het labyrint gebruikt als metafoor voor menselijk denken en de levensreis. Op zaterdag 24 oktober is de locatie open van 10:00–18:00.",
+      "source": "Prague City Gallery (GHMP)",
+      "eventUrl": "https://www.ghmp.cz/en/exhibitions/labyrinth-wandering-within/",
+      "sourceUrl": "https://www.ghmp.cz/en/exhibitions/labyrinth-wandering-within/",
+      "image": "",
+      "reisblikMatch": true,
+      "matchReasons": [
+        "bijzondere locatie",
+        "kunst en omgeving combineren",
+        "inhoudelijk en niet alledaags"
+      ]
+    }
+  ]
+}
