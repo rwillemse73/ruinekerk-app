@@ -6,11 +6,12 @@
       "type": "evenementen",
       "basePath": "evenement-2026"
     },
-     {
+    {
       "id": "praag",
       "naam": "Praag 2026",
-       "type": "vast"
-   },
+      "type": "vast",
+      "basePath": "praag"
+    },
     {
       "id": "trekvogelpad",
       "naam": "Trekvogelpad",
@@ -20,7 +21,6 @@
       "id": "argentinie-chili",
       "naam": "Argentinië & Chili",
       "type": "vast"
-    },
-    
+    }
   ]
-} \
+}
