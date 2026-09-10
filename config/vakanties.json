@@ -1,6 +1,17 @@
 {
   "vakanties": [
     {
+      "id": "evenement-2026",
+      "naam": "Evenementen 2026",
+      "type": "evenementen",
+      "basePath": "evenement-2026"
+    },
+     {
+      "id": "praag",
+      "naam": "Praag 2026",
+       "type": "vast"
+   },
+    {
       "id": "trekvogelpad",
       "naam": "Trekvogelpad",
       "type": "vast"
@@ -10,11 +21,6 @@
       "naam": "Argentinië & Chili",
       "type": "vast"
     },
-    {
-      "id": "evenement-2026",
-      "naam": "Evenementen 2026",
-      "type": "evenementen",
-      "basePath": "evenement-2026"
-    }
+    
   ]
 }
