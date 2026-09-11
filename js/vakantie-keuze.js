@@ -1,4 +1,4 @@
-// Reisblik 9.5 — Vakantiekeuze + laadindicator
+// Reisblik 9.7.5 — Vakantiekeuze + laadindicator
 // Fase 1 + 2: dropdown uit config en koppeling aan de centrale vakantiecontext.
 (function(){
   function toonLaden(naam){
@@ -19,7 +19,7 @@
     if(!select || !window.reisblikVakantie) return;
 
     try{
-      const response=await fetch('config/vakanties.json?v='+Date.now(),{cache:'no-store'});
+      const response=await fetch('config/vakanties.json',{cache:'no-store'});
       if(!response.ok) throw new Error('HTTP '+response.status);
       const data=await response.json();
       const vakanties=Array.isArray(data.vakanties)?data.vakanties:[];
