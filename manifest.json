@@ -1,0 +1,10 @@
+{
+  "name": "Reisblik – Mijn Reisdagboek",
+  "short_name": "Reisblik",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#26353a",
+  "lang": "nl",
+  "description": "Reisblik – mijn reisdagboek en locatie-app."
+}
