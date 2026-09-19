@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reisblik</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#26353a">
+<link rel="stylesheet" href="css/reisblik.css?v=9.9.10">
+<style>
+  body.start-page{background:#f3f0e8;color:#17384a;margin:0;font-family:Arial,sans-serif;}
+  .start-wrap{max-width:920px;margin:28px auto;padding:0 20px;}
+  .start-card{background:#fff;border:1px solid #cfd8dc;border-radius:14px;box-shadow:0 2px 8px rgba(0,0,0,.08);margin:18px 0;overflow:hidden;}
+  .start-card-head{padding:18px 20px;border-bottom:1px solid #dfe4e6;font-size:20px;font-weight:700;display:flex;align-items:center;justify-content:space-between;}
+  .start-card-body{padding:18px 20px;}
+  .start-vakantie-row{display:flex;align-items:center;gap:14px;flex-wrap:wrap;}
+  .start-vakantie-row label{font-weight:700;font-size:18px;}
+  .start-select{font-size:18px;font-weight:600;padding:10px 14px;border:1px solid #aebdc4;border-radius:12px;background:#fff;min-width:310px;color:#17384a;}
+  .start-button{background:#26353a;color:#fff;border:0;border-radius:11px;padding:11px 18px;font-size:16px;font-weight:600;cursor:pointer;}
+  .start-status{margin-top:10px;color:#61747d;font-size:14px;}
+  .start-parts{margin:16px 0;padding:14px;border:1px solid #d8dfe2;border-radius:10px;background:#f8faf9;}
+  .start-part{display:inline-flex;gap:7px;margin:6px 16px 6px 0;}
+  .start-actions{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap;}
+  .start-mini{padding:7px 11px;border:1px solid #aebdc4;border-radius:8px;background:#fff;cursor:pointer;}
+  .start-intro{text-align:center;margin-bottom:26px;}
+  .start-intro h1{margin:0 0 8px;font-size:32px;}
+  .start-intro p{margin:0;color:#61747d;font-size:17px;}
+  .start-arrow{font-size:18px;color:#68777d;}
+</style>
+</head>
+<body class="start-page">
+<div class="start-wrap">
+  <div class="start-app-header">
+    <div class="start-app-title-row">
+      <h1>Reisblik <span class="version-inline">app v9.9.10</span></h1>
+    </div>
+    <div id="startCurrentDateTime" class="start-app-datetime"></div>
+    <div id="startOfflineStatus" class="start-app-offline" aria-live="polite">🟢 Online</div>
+    <div class="start-app-tagline-row">
+      <img src="logo/reisblik-logo.png" alt="Reisblik logo" class="start-app-logo">
+      <div>De app voor vastleggen van reisinfo</div>
+    </div>
+    <div class="start-intro-text">Kies eerst welke reiscontext je wilt openen.</div>
+  </div>
+
+  <section class="start-card">
+    <div class="start-card-head"><span>🧳 Actieve vakantie</span><span class="start-arrow">▼</span></div>
+    <div class="start-card-body">
+      <div class="start-vakantie-row">
+        <label for="startVacationSelect">Vakantie:</label>
+        <select id="startVacationSelect" class="start-select"></select>
+        <button id="startOpenBtn" class="start-button" type="button">Open actieve vakantie</button>
+      </div>
+      <div id="startParts" class="start-parts" hidden></div>
+      <div id="startVacationStatus" class="start-status"></div>
+    </div>
+  </section>
+
+  <section class="start-card">
+    <div class="start-card-head"><span>📚 Vakantiearchief</span><span class="start-arrow">▼</span></div>
+    <div class="start-card-body">
+      <div class="start-vakantie-row">
+        <label for="startArchiveSelect">Vakantie:</label>
+        <select id="startArchiveSelect" class="start-select"></select>
+        <button id="startArchiveBtn" class="start-button" type="button">Open archiefvakantie</button>
+      </div>
+      <div id="startArchiveStatus" class="start-status"></div>
+    </div>
+  </section>
+
+  <section class="start-card">
+    <button class="start-card-head start-card-toggle" id="startManageToggle" type="button" aria-expanded="false">
+      <span>⚙️ Reisblik Beheer</span><span class="start-arrow">▼</span>
+    </button>
+    <div class="start-card-body" id="startManageBody" hidden>
+      <p class="start-status" style="margin-top:0">App-brede functies. Deze blijven op deze startpagina.</p>
+      <div class="start-management-block">
+        <div class="start-management-title">💾 Backup</div>
+        <div class="start-actions">
+          <button id="backupOpenBtn" class="start-button" type="button">💾 Backup content</button>
+          <button id="restoreOpenBtn" class="start-button" type="button">♻️ Backup terugzetten</button>
+        </div>
+      </div>
+      <div class="start-management-block">
+        <div class="start-management-title">
+          🧪 Testfuncties
+          <label class="panel-switch" title="Testfuncties tonen/verbergen">
+            <input type="checkbox" id="testFunctionsToggle" checked>
+            <span class="panel-switch-slider" aria-hidden="true"></span>
+          </label>
+        </div>
+        <div id="testFunctionsBody">
+          <div class="start-test-row">
+            <button id="clearStorageBtn" class="start-button" type="button">🗑️ Alle lokale gegevens wissen</button>
+            <button id="startTestPositionBtn" class="start-button" type="button">🧪 Testpositie</button>
+          </div>
+          <div class="start-test-row">
+            <input id="testAddress" class="start-test-input" placeholder="Adres voor testpositie…">
+            <button id="startTestAddressBtn" class="start-button" type="button">🔎 Adres zoeken</button>
+          </div>
+          <div id="testAddressStatus31" class="start-status"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<div id="backupModal" class="start-overlay" style="display:none" role="dialog" aria-modal="true">
+<div class="start-modal"><h2>💾 Backup content</h2><p>Maak een backup van je persoonlijke Reisblik-gegevens.</p>
+<div class="backup-list"><div>✓ Bezocht</div><div>✓ Bezoekdatum en tijd</div><div>✓ Extra informatie</div><div>✓ Eigen locaties</div><div>✓ Persoonlijke notities</div><div>✓ Opgeslagen Agenda-evenementen</div></div>
+<div class="start-actions"><button id="backupCreateBtn" class="start-button" type="button">💾 Backup maken</button><button id="backupCloseBtn" class="start-button" type="button">Sluiten</button></div><div id="backupStatus" class="start-status"></div></div></div>
+<div id="restoreModal" class="start-overlay" style="display:none" role="dialog" aria-modal="true">
+<div class="start-modal"><h2>♻️ Backup terugzetten</h2><p>Kies een eerder gemaakte Reisblik-contentbackup.</p>
+<input id="restoreFile" type="file" accept="application/json,.json" style="display:block;margin:10px 0;width:100%"><div id="restorePreview" class="start-status"></div>
+<div class="start-actions"><button id="restoreConfirmBtn" class="start-button" type="button" disabled>♻️ Backup terugzetten</button><button id="restoreCloseBtn" class="start-button" type="button">Sluiten</button></div><div id="restoreStatus" class="start-status"></div></div></div>
+<div id="clearStorageModal" class="start-overlay" style="display:none" role="dialog" aria-modal="true">
+<div class="start-modal"><h2>🗑️ Alle lokale gegevens wissen</h2><p><strong>Let op:</strong> hiermee wordt de volledige localStorage van Reisblik op dit apparaat gewist.</p>
+<div class="start-actions"><button id="clearStorageConfirmBtn" class="start-button" type="button">🗑️ Alles wissen</button><button id="clearStorageCancelBtn" class="start-button" type="button">Annuleren</button></div></div></div>
+<script src="js/vakantie.js"></script>
+<script>
+(function(){
+  const $=id=>document.getElementById(id);
+  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
+  async function init(){
+    const select=$('startVacationSelect'), partsHost=$('startParts');
+    try{
+      const r=await fetch('config/vakanties.json',{cache:'no-store'}); if(!r.ok) throw new Error('HTTP '+r.status);
+      const data=await r.json(); const vs=Array.isArray(data.vakanties)?data.vakanties:[];
+      window.reisblikVakantie.setVakanties(vs);
+      select.innerHTML=vs.map(v=>'<option value="'+esc(v.id)+'">'+esc(v.naam)+'</option>').join('');
+      const active=window.reisblikVakantie.getActieveVakantieId(); if(active) select.value=active;
+      function renderParts(){
+        const v=window.reisblikVakantie.getVakanties().find(x=>x.id===select.value);
+        const ps=Array.isArray(v?.onderdelen)?v.onderdelen:[];
+        if(!ps.length){partsHost.hidden=true;partsHost.innerHTML='';return;}
+        const selected=window.reisblikVakantie.getGeselecteerdeOnderdeelIds();
+        partsHost.hidden=false;
+        partsHost.innerHTML='<strong>Welke plaatsen / etappes wil je zien?</strong><br>'+ps.map(p=>'<label class="start-part"><input type="checkbox" data-part="'+esc(p.id)+'" '+(selected.includes(String(p.id))?'checked':'')+'> '+esc(p.naam||p.id)+'</label>').join('')+'<div class="start-actions"><button class="start-mini" id="allParts">Alles aan</button><button class="start-mini" id="noParts">Alles uit</button></div>';
+        const save=()=>window.reisblikVakantie.setGeselecteerdeOnderdeelIds([...partsHost.querySelectorAll('[data-part]:checked')].map(x=>x.dataset.part));
+        partsHost.querySelectorAll('[data-part]').forEach(x=>x.addEventListener('change',save));
+        $('allParts').onclick=()=>{partsHost.querySelectorAll('[data-part]').forEach(x=>x.checked=true);save();};
+        $('noParts').onclick=()=>{partsHost.querySelectorAll('[data-part]').forEach(x=>x.checked=false);save();};
+      }
+      select.onchange=renderParts; renderParts();
+      $('startOpenBtn').onclick=()=>{const id=select.value; const ids=[...partsHost.querySelectorAll('[data-part]:checked')].map(x=>x.dataset.part); if(window.reisblikVakantie.kiesVakantieMetOnderdelen(id,ids)){location.href='app.html#open';}};
+    }catch(e){$('startVacationStatus').textContent='Vakanties konden niet worden geladen: '+e.message;}
+    try{
+      const r=await fetch('archief/archief.json?v='+Date.now(),{cache:'no-store'}); if(!r.ok) throw new Error('HTTP '+r.status);
+      const d=await r.json(); const a=Array.isArray(d.archieven)?d.archieven:[];
+      $('startArchiveSelect').innerHTML=a.length?a.map(x=>'<option value="'+esc(x.bestand||'')+'">'+esc(x.naam||x.id||'Archief')+'</option>').join(''):'<option value="">— nog geen archieven —</option>';
+      $('startArchiveBtn').onclick=()=>{const f=$('startArchiveSelect').value;if(f)location.href='archief/'+f;};
+    }catch(e){$('startArchiveSelect').innerHTML='<option value="">— archief kon niet worden geladen —</option>';}
+    const manageToggle=$('startManageToggle'), manageBody=$('startManageBody');
+    manageToggle.onclick=()=>{const open=manageBody.hidden;manageBody.hidden=!open;manageToggle.setAttribute('aria-expanded',open?'true':'false');manageToggle.querySelector('.start-arrow').textContent=open?'▲':'▼';};
+    $('testFunctionsToggle').addEventListener('change',e=>{$('testFunctionsBody').hidden=!e.target.checked;});
+    $('startTestPositionBtn').onclick=()=>{localStorage.setItem('reisblik_test_position_v1',JSON.stringify({lat:52.719804,lon:4.878203,label:'Testpositie'}));$('testAddressStatus31').textContent='✓ Testpositie opgeslagen.';};
+    $('startTestAddressBtn').onclick=async()=>{const input=$('testAddress'),status=$('testAddressStatus31'),address=input.value.trim();if(!address){status.textContent='Vul eerst een adres in.';return;}status.textContent='Adres wordt gezocht…';try{const r=await fetch('https://nominatim.openstreetmap.org/search?format=jsonv2&limit=1&q='+encodeURIComponent(address),{headers:{'Accept':'application/json'}});if(!r.ok)throw new Error();const d=await r.json();if(!d.length){status.textContent='Adres niet gevonden.';return;}const p={lat:Number(d[0].lat),lon:Number(d[0].lon),label:d[0].display_name};localStorage.setItem('reisblik_test_position_v1',JSON.stringify(p));status.textContent='✓ Gevonden en opgeslagen: '+p.label;}catch(e){status.textContent='Adres zoeken mislukt.';}};
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
+})();
+</script>
+<script src="js/backup.js"></script><script src="js/restore.js"></script><script src="js/clear-local-storage.js"></script>
+
+<script>
+(function(){
+  function updateStartDateTime(){
+    const el=document.getElementById('startCurrentDateTime');
+    if(!el)return;
+    const d=new Date();
+    const pad=n=>String(n).padStart(2,'0');
+    el.textContent=pad(d.getDate())+'-'+pad(d.getMonth()+1)+'-'+d.getFullYear()+' · '+pad(d.getHours())+':'+pad(d.getMinutes())+':'+pad(d.getSeconds());
+  }
+  function updateStartOnline(){
+    const el=document.getElementById('startOfflineStatus');
+    if(!el)return;
+    el.textContent=navigator.onLine?'🟢 Online':'🟠 Offline – GPS kan blijven werken';
+    el.style.color=navigator.onLine?'#176b3a':'#9a5b00';
+  }
+  updateStartDateTime(); updateStartOnline();
+  setInterval(updateStartDateTime,1000);
+  window.addEventListener('online',updateStartOnline);
+  window.addEventListener('offline',updateStartOnline);
+})();
+</script>
+</body>
+</html>
