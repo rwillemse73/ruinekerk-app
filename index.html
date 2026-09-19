@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reisblik</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#26353a">
+<link rel="stylesheet" href="css/reisblik.css?v=9.9.8">
+<style>
+  body.start-page{background:#f3f0e8;color:#17384a;margin:0;font-family:Arial,sans-serif;}
+  .start-wrap{max-width:920px;margin:28px auto;padding:0 20px;}
+  .start-card{background:#fff;border:1px solid #cfd8dc;border-radius:14px;box-shadow:0 2px 8px rgba(0,0,0,.08);margin:18px 0;overflow:hidden;}
+  .start-card-head{padding:18px 20px;border-bottom:1px solid #dfe4e6;font-size:20px;font-weight:700;display:flex;align-items:center;justify-content:space-between;}
+  .start-card-body{padding:18px 20px;}
+  .start-vakantie-row{display:flex;align-items:center;gap:14px;flex-wrap:wrap;}
+  .start-vakantie-row label{font-weight:700;font-size:18px;}
+  .start-select{font-size:18px;font-weight:600;padding:10px 14px;border:1px solid #aebdc4;border-radius:12px;background:#fff;min-width:310px;color:#17384a;}
+  .start-button{background:#26353a;color:#fff;border:0;border-radius:11px;padding:11px 18px;font-size:16px;font-weight:600;cursor:pointer;}
+  .start-status{margin-top:10px;color:#61747d;font-size:14px;}
+  .start-parts{margin:16px 0;padding:14px;border:1px solid #d8dfe2;border-radius:10px;background:#f8faf9;}
+  .start-part{display:inline-flex;gap:7px;margin:6px 16px 6px 0;}
+  .start-actions{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap;}
+  .start-mini{padding:7px 11px;border:1px solid #aebdc4;border-radius:8px;background:#fff;cursor:pointer;}
+  .start-intro{text-align:center;margin-bottom:26px;}
+  .start-intro h1{margin:0 0 8px;font-size:32px;}
+  .start-intro p{margin:0;color:#61747d;font-size:17px;}
+  .start-arrow{font-size:18px;color:#68777d;}
+</style>
+</head>
+<body class="start-page">
+<div class="start-wrap">
+  <div class="start-intro">
+    <h1>🌍 Reisblik</h1>
+    <p>Kies eerst welke reiscontext je wilt openen.</p>
+  </div>
+
+  <section class="start-card">
+    <div class="start-card-head"><span>🧳 Actieve vakantie</span><span class="start-arrow">▼</span></div>
+    <div class="start-card-body">
+      <div class="start-vakantie-row">
+        <label for="startVacationSelect">Vakantie:</label>
+        <select id="startVacationSelect" class="start-select"></select>
+        <button id="startOpenBtn" class="start-button" type="button">Open actieve vakantie</button>
+      </div>
+      <div id="startParts" class="start-parts" hidden></div>
+      <div id="startVacationStatus" class="start-status"></div>
+    </div>
+  </section>
+
+  <section class="start-card">
+    <div class="start-card-head"><span>📚 Vakantiearchief</span><span class="start-arrow">▼</span></div>
+    <div class="start-card-body">
+      <div class="start-vakantie-row">
+        <label for="startArchiveSelect">Vakantie:</label>
+        <select id="startArchiveSelect" class="start-select"></select>
+        <button id="startArchiveBtn" class="start-button" type="button">Open archiefvakantie</button>
+      </div>
+      <div id="startArchiveStatus" class="start-status"></div>
+    </div>
+  </section>
+
+  <section class="start-card">
+    <div class="start-card-head"><span>⚙️ Reisblik Beheer</span><span class="start-arrow">▼</span></div>
+    <div class="start-card-body">
+      <p class="start-status" style="margin-top:0">App-brede functies zoals backup, herstellen en testfuncties.</p>
+      <button id="startManageBtn" class="start-button" type="button">Open Reisblik Beheer</button>
+    </div>
+  </section>
+</div>
+<script src="js/vakantie.js"></script>
+<script>
+(function(){
+  const $=id=>document.getElementById(id);
+  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
+  async function init(){
+    const select=$('startVacationSelect'), partsHost=$('startParts');
+    try{
+      const r=await fetch('config/vakanties.json',{cache:'no-store'}); if(!r.ok) throw new Error('HTTP '+r.status);
+      const data=await r.json(); const vs=Array.isArray(data.vakanties)?data.vakanties:[];
+      window.reisblikVakantie.setVakanties(vs);
+      select.innerHTML=vs.map(v=>'<option value="'+esc(v.id)+'">'+esc(v.naam)+'</option>').join('');
+      const active=window.reisblikVakantie.getActieveVakantieId(); if(active) select.value=active;
+      function renderParts(){
+        const v=window.reisblikVakantie.getVakanties().find(x=>x.id===select.value);
+        const ps=Array.isArray(v?.onderdelen)?v.onderdelen:[];
+        if(!ps.length){partsHost.hidden=true;partsHost.innerHTML='';return;}
+        const selected=window.reisblikVakantie.getGeselecteerdeOnderdeelIds();
+        partsHost.hidden=false;
+        partsHost.innerHTML='<strong>Welke plaatsen / etappes wil je zien?</strong><br>'+ps.map(p=>'<label class="start-part"><input type="checkbox" data-part="'+esc(p.id)+'" '+(selected.includes(String(p.id))?'checked':'')+'> '+esc(p.naam||p.id)+'</label>').join('')+'<div class="start-actions"><button class="start-mini" id="allParts">Alles aan</button><button class="start-mini" id="noParts">Alles uit</button></div>';
+        const save=()=>window.reisblikVakantie.setGeselecteerdeOnderdeelIds([...partsHost.querySelectorAll('[data-part]:checked')].map(x=>x.dataset.part));
+        partsHost.querySelectorAll('[data-part]').forEach(x=>x.addEventListener('change',save));
+        $('allParts').onclick=()=>{partsHost.querySelectorAll('[data-part]').forEach(x=>x.checked=true);save();};
+        $('noParts').onclick=()=>{partsHost.querySelectorAll('[data-part]').forEach(x=>x.checked=false);save();};
+      }
+      select.onchange=renderParts; renderParts();
+      $('startOpenBtn').onclick=()=>{const id=select.value; const ids=[...partsHost.querySelectorAll('[data-part]:checked')].map(x=>x.dataset.part); if(window.reisblikVakantie.kiesVakantieMetOnderdelen(id,ids)){location.href='app.html#open';}};
+    }catch(e){$('startVacationStatus').textContent='Vakanties konden niet worden geladen: '+e.message;}
+    try{
+      const r=await fetch('archief/archief.json?v='+Date.now(),{cache:'no-store'}); if(!r.ok) throw new Error('HTTP '+r.status);
+      const d=await r.json(); const a=Array.isArray(d.archieven)?d.archieven:[];
+      $('startArchiveSelect').innerHTML=a.length?a.map(x=>'<option value="'+esc(x.bestand||'')+'">'+esc(x.naam||x.id||'Archief')+'</option>').join(''):'<option value="">— nog geen archieven —</option>';
+      $('startArchiveBtn').onclick=()=>{const f=$('startArchiveSelect').value;if(f)location.href='archief/'+f;};
+    }catch(e){$('startArchiveSelect').innerHTML='<option value="">— archief kon niet worden geladen —</option>';}
+    $('startManageBtn').onclick=()=>location.href='app.html#beheer';
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
+})();
+</script>
+</body>
+</html>
