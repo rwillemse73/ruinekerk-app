@@ -1,0 +1,13 @@
+{
+  "formatVersion": "2.0",
+  "sourceFile": "Reisblik_content_backup_2026-10-11_15-49.json",
+  "createdAt": "2026-10-11",
+  "description": "Evenementen 2026: winkels-dataset geconverteerd uit lokale Reisblik-back-up. Originele velden zijn behouden in originalData.",
+  "dataModel": {
+    "runtimeSource": "Per record sourceInfo.runtimeSource geeft json aan.",
+    "narrativeOrigin": "sourceInfo.narrativeOrigin geeft herkomst verhaaltekst aan.",
+    "contentParagraphs": "Beschikbare description/story als tekstalinea’s.",
+    "sourceInfo": "Herkomst van gegevens."
+  },
+  "locations": []
+}
