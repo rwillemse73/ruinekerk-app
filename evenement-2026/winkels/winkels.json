@@ -1,0 +1,14 @@
+{
+  "formatVersion": "2.0",
+  "sourceFile": "Reisblik_content_backup_2026-10-11_15-49.json",
+  "createdAt": "2026-10-11",
+  "description": "Winkels voor vakantie Evenementen 2026, inclusief bezoekstatus.",
+  "dataModel": {
+    "runtimeSource": "Per record sourceInfo.runtimeSource geeft aan dat de app deze categorie uit JSON laadt.",
+    "narrativeOrigin": "contentParagraphs bevat de beschikbare beschrijving en reiservaring.",
+    "visitStatus": "visited en visitedAt staan per locatie in hetzelfde categorie-record; er is geen apart bezocht.json nodig als de app deze velden gebruikt.",
+    "sourceInfo": "Herkomst per record."
+  },
+  "vacationId": "evenement-2026",
+  "locations": []
+}
